@@ -9,6 +9,8 @@ import os
 import sys
 import pyrpr
 import glob
+import subprocess 
+import platform
 from shutil import copyfile
 from rprblender import material_library
 from rprblender.utils.user_settings import get_user_settings
@@ -26,6 +28,10 @@ ENGINE = r'{engine}'
 RETRIES = {retries}
 LOGS_DIR = path.join(WORK_DIR, 'render_tool_logs')
 
+if TEST_TYPE == "RPR_Export":
+    RPR_EXPORT_DIR = os.path.abspath("").rsplit("\\", 1)[0] + "\\Work\\Results\\Blender28\\RPR_Export\\rpr_export\\"
+    if not os.path.exists(RPR_EXPORT_DIR):
+        os.mkdir(RPR_EXPORT_DIR)
 
 def event(name, start, case):
     pathEvents = path.join(os.path.dirname(os.path.realpath(__file__)), 'events')
