@@ -4,25 +4,25 @@
         "status": "active",
         "functions": [
             "bpy.ops.rpr.export_scene_rpr(filepath=RPR_EXPORT_DIR + \"\\ex1.rpr\", check_existing=True, filter_glob=\"*.rpr\", export_animation=False, export_as_single_file=False, compression='LOW', start_frame=0, end_frame=0)",
-            "rpr_render(case)",
             "core_Render(case)"
         ],
         "script_info": [
-            "ex1"
+            "Result of the Core rendering"
         ],
-        "scene": "EmissiveLight.blend"
+        "scene": "EmissiveLight.blend",
+        "extension": ".png"
     },
     {
         "case": "ex2",
         "status": "active",
         "functions": [
             "bpy.ops.rpr.export_scene_rpr(filepath=RPR_EXPORT_DIR + \"\\ex2.rpr\", check_existing=True, filter_glob=\"*.rpr\", export_animation=False, export_as_single_file=False, compression='LOW', start_frame=0, end_frame=0)",
-            "rpr_render(case)",
             "core_Render(case)"
         ],
         "script_info": [
-            "ex2"
+            "Result of the Core rendering"
         ],
-        "scene": "EmissiveLight.blend"
+        "scene": "EmissiveLight.blend",
+        "extension": ".png"
     }
 ]

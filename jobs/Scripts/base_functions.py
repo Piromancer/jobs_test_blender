@@ -29,7 +29,7 @@ RETRIES = {retries}
 LOGS_DIR = path.join(WORK_DIR, 'render_tool_logs')
 
 if TEST_TYPE == "RPR_Export":
-    RPR_EXPORT_DIR = os.path.abspath("").rsplit("\\", 1)[0] + "\\Work\\Results\\Blender28\\RPR_Export\\rpr_export\\"
+    RPR_EXPORT_DIR = WORK_DIR + "\\rpr_export\\"
     if not os.path.exists(RPR_EXPORT_DIR):
         os.mkdir(RPR_EXPORT_DIR)
 
@@ -80,7 +80,10 @@ def reportToJSON(case, render_time=0):
     report['script_info'] = case['script_info']
     report['scene_name'] = case.get('scene', '')
     if case['status'] != 'skipped':
-        report['file_name'] = case['case'] + case.get('extension', '.jpg')
+        if TEST_TYPE == "RPR_Export":
+            report['file_name'] = case['case'] + case['extension']
+        else:
+            report['file_name'] = case['case'] + case.get('extension', '.jpg')
         report['render_color_path'] = path.join('Color', report['file_name'])
 
     # save metrics which can be received witout call of functions of Blender
