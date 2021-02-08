@@ -28,10 +28,7 @@ ENGINE = r'{engine}'
 RETRIES = {retries}
 LOGS_DIR = path.join(WORK_DIR, 'render_tool_logs')
 
-if TEST_TYPE == "RPR_Export":
-    RPR_EXPORT_DIR = WORK_DIR + "\\Color\\"
-    if not os.path.exists(RPR_EXPORT_DIR):
-        os.mkdir(RPR_EXPORT_DIR)
+RPR_EXPORT_DIR = WORK_DIR + "\\Color\\"
 
 def event(name, start, case):
     pathEvents = path.join(os.path.dirname(os.path.realpath(__file__)), 'events')

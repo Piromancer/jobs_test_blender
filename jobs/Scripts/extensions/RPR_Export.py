@@ -18,8 +18,8 @@ def core_Render(case):
         start_time = datetime.datetime.now()
         process = subprocess.Popen(RPR_TOOL + " " + case_rpr + " " + case_json, stdout=subprocess.PIPE, shell=True)
         render_time = (datetime.datetime.now() - start_time).total_seconds()
-
-        case['status'] = 'done'
+        if not os.path.exists(RPR_EXPORT_DIR + case['case'] + ".png"):
+            logging("Case: " + case['case'] + ". There is no .png result of rendering" )
         event('Postrender', True, case['case'])
         reportToJSON(case, render_time)
     else:
