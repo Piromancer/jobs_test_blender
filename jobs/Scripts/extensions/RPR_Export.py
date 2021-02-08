@@ -11,16 +11,17 @@ def core_Render(case):
     case_rpr = RPR_EXPORT_DIR + case['case'] + ".rpr"
     case_json = RPR_EXPORT_DIR + case['case'] + ".json"
     if os.path.exists(case_rpr) and os.path.exists(case_json):
+        logging('Render image')
         logging("Run command: " + RPR_TOOL + " " + case_rpr + " " + case_json)
+        event('Prerender', False, case['case'])
+        event('Postrender', True, case['case'])
+        start_time = datetime.datetime.now()
         process = subprocess.Popen(RPR_TOOL + " " + case_rpr + " " + case_json, stdout=subprocess.PIPE, shell=True)
-        output = process.communicate()
-        replace_results(case, RPR_EXPORT_DIR + case['case'] + ".png")
+        render_time = (datetime.datetime.now() - start_time).total_seconds()
+
+        case['status'] = 'done'
+        event('Postrender', True, case['case'])
+        reportToJSON(case, render_time)
     else:
         logging("Case: " + case['case'] + ". There is no .json or .rpr file for rendering" )
 
-def replace_results(case, result_def):
-    output = WORK_DIR + "\\Color\\" + case['case'] + ".png"
-    if os.path.exists(result_def):
-        os.replace(result_def,output)
-    else:
-        logging("Case: " + case['case'] + ". There is no result .png file" )

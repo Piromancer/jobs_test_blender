@@ -29,7 +29,7 @@ RETRIES = {retries}
 LOGS_DIR = path.join(WORK_DIR, 'render_tool_logs')
 
 if TEST_TYPE == "RPR_Export":
-    RPR_EXPORT_DIR = WORK_DIR + "\\rpr_export\\"
+    RPR_EXPORT_DIR = WORK_DIR + "\\Color\\"
     if not os.path.exists(RPR_EXPORT_DIR):
         os.mkdir(RPR_EXPORT_DIR)
 
