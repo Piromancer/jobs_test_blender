@@ -28,8 +28,6 @@ ENGINE = r'{engine}'
 RETRIES = {retries}
 LOGS_DIR = path.join(WORK_DIR, 'render_tool_logs')
 
-RPR_EXPORT_DIR = WORK_DIR + "\\Color\\"
-
 def event(name, start, case):
     pathEvents = path.join(os.path.dirname(os.path.realpath(__file__)), 'events')
     with open(path.join(pathEvents, str(glob.glob(path.join(pathEvents, '*.json')).__len__() + 1) + '.json'), 'w') as f:
