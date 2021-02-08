@@ -55,12 +55,12 @@ def reportToJSON(case, render_time=0):
     logging('Create report json ({{}} {{}})'.format(
             case['case'], report['test_status']))
 
+    number_of_tries = case.get('number_of_tries', 0)
     if case['status'] == 'error':
-        number_of_tries = case.get('number_of_tries', 0)
         if number_of_tries == RETRIES:
-            error_message = 'Testcase wasn\'t executed successfully (all attempts were used). Number of tries: {{}}'.format(str(number_of_tries))
+            error_message = 'Testcase wasn\'t executed successfully (all attempts were used)'
         else:
-            error_message = 'Testcase wasn\'t executed successfully. Number of tries: {{}}'.format(str(number_of_tries))
+            error_message = 'Testcase wasn\'t executed successfully'
         report['message'] = [error_message]
         report['group_timeout_exceeded'] = False
     else:
@@ -74,6 +74,7 @@ def reportToJSON(case, render_time=0):
     report['difference_color'] = 0
     report['script_info'] = case['script_info']
     report['scene_name'] = case.get('scene', '')
+    report['number_of_tries'] = number_of_tries
     if case['status'] != 'skipped':
         if TEST_TYPE == "RPR_Export":
             report['file_name'] = case['case'] + case['extension']
@@ -162,7 +163,6 @@ def rpr_render(case):
     logging('Render image')
     event('Prerender', False, case['case'])
 
-    event('Postrender', True, case['case'])
     start_time = datetime.datetime.now()
     bpy.ops.render.render(write_still=True)
     render_time = (datetime.datetime.now() - start_time).total_seconds()

@@ -238,7 +238,14 @@ def main(args):
                 template['file_name'] = 'failed.jpg'
                 template['render_color_path'] = os.path.join('Color', 'failed.jpg')
 
-            with open(os.path.join(work_dir, case['case'] + core_config.CASE_REPORT_SUFFIX), 'w') as f:
+            case_path = os.path.join(work_dir, case['case'] + core_config.CASE_REPORT_SUFFIX)
+
+            if os.path.exists(case_path):
+                with open(case_path) as f:
+                    case_json = json.load(f)[0]
+                    template["number_of_tries"] = case_json["number_of_tries"]
+
+            with open(case_path, 'w') as f:
                 f.write(json.dumps([template], indent=4))
 
         if 'Update' not in args.update_refs:
