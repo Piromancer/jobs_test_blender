@@ -257,7 +257,10 @@
         "script_info": [
             "classroom"
         ],
-        "scene": "classroom.blend"
+        "scene": "classroom.blend",
+        "skip_config": [
+            ["AMD Radeon RX Vega 56 (Metal)"]
+        ]
     },
     {
         "case": "BL28_BCS_019",
@@ -295,7 +298,10 @@
         "script_info": [
             "stylized_levi"
         ],
-        "scene": "stylized_levi.blend"
+        "scene": "stylized_levi.blend",
+        "skip_config": [
+            ["AMD Radeon RX Vega 56 (Metal)"]
+        ]
     },
     {
         "case": "BL28_BCS_022",
@@ -336,7 +342,10 @@
         "script_info": [
             "scene_Helicopter_27"
         ],
-        "scene": "scene_Helicopter_27.blend"
+        "scene": "scene_Helicopter_27.blend",
+        "skip_config": [
+            ["AMD Radeon RX Vega 56 (Metal)"]
+        ]
     },
     {
         "case": "BL28_BCS_025",
@@ -378,7 +387,10 @@
         "script_info": [
             "Tram_Station"
         ],
-        "scene": "Tram_Station.blend"
+        "scene": "Tram_Station.blend",
+        "skip_config": [
+            ["AMD Radeon RX Vega 56 (Metal)"]
+        ]
     },
     {
         "case": "BL28_BCS_028",
@@ -445,7 +457,10 @@
         "script_info": [
             "greasepencil-bike"
         ],
-        "scene": "greasepencil-bike.blend"
+        "scene": "greasepencil-bike.blend",
+        "skip_config": [
+            ["AMD Radeon RX Vega 56 (Metal)"]
+        ]
     },
     {
         "case": "BL28_BCS_032",

@@ -690,7 +690,10 @@
 			"Transparent Background",
 			"Pass Limit: 50"
 		],
-		"scene": "AOV_SC.blend"
+		"scene": "AOV_SC.blend",
+        "skip_config": [
+            ["AMD Radeon RX Vega 56 (Metal)"]
+        ]
 	},
 	{
 		"case": "BL28_SM_042",

@@ -174,12 +174,10 @@
         ],
         "script_info": [
             "Denoiser type: ML",
-            "Use Color AOV: True"
+            "Color only",
+            "F-16"
         ],
-        "scene": "DenoiserMetal.blend",
-        "skip_config":[
-            ["Linux"]
-        ]
+        "scene": "DenoiserMetal.blend"
     },
     {
         "case": "BL28_RS_DEN_027",
@@ -194,12 +192,10 @@
         ],
         "script_info": [
             "Denoiser type: ML",
-            "Use Color AOV: False"
+            "Color + AOV",
+            "F-16"
         ],
-        "scene": "DenoiserMetal.blend",
-        "skip_config":[
-            ["Linux"]
-        ]
+        "scene": "DenoiserMetal.blend"
     },
     {
         "case": "BL28_RS_DEN_039",
@@ -264,9 +260,10 @@
         ],
         "script_info": [
             "Denoiser type: ML",
-            "Use Color AOV: True",
+            "Color Only",
             "PhysicalLight2 intensity: 0",
-            "IES intensity: 3"
+            "IES intensity: 3",
+            "F-16"
         ],
         "scene": "DenoiserLight.blend",
         "skip_config": [
@@ -290,9 +287,10 @@
         ],
         "script_info": [
             "Denoiser type: ML",
-            "Use Color AOV: False",
+            "Color + AOV",
             "PhysicalLight2 intensity: 0",
-            "IES intensity: 3"
+            "IES intensity: 3",
+            "F-16"
         ],
         "scene": "DenoiserLight.blend",
         "skip_config": [
@@ -316,9 +314,10 @@
         ],
         "script_info": [
             "Denoiser type: ML",
-            "Use Color AOV: True",
+            "Color only",
             "PhysicalLight2 intensity: 3",
-            "IES intensity: 3"
+            "IES intensity: 3",
+            "F-16"
         ],
         "scene": "DenoiserLight.blend",
         "skip_config": [
@@ -342,9 +341,10 @@
         ],
         "script_info": [
             "Denoiser type: ML",
-            "Use Color AOV: False",
+            "Color + AOV",
             "PhysicalLight2 intensity: 3",
-            "IES intensity: 3"
+            "IES intensity: 3",
+            "F-16"
         ],
         "scene": "DenoiserLight.blend",
         "skip_config": [
@@ -490,7 +490,8 @@
         ],
         "script_info": [
             "Denoiser type: ML",
-            "Use Color AOV: True"
+            "Color Only",
+            "F-16"
         ],
         "scene": "DenoiserDOF.blend",
         "skip_config": [
@@ -510,7 +511,8 @@
         ],
         "script_info": [
             "Denoiser type: ML",
-            "Use Color AOV: False"
+            "Color + AOV",
+            "F-16"
         ],
         "scene": "DenoiserDOF.blend",
         "skip_config": [
@@ -575,12 +577,10 @@
         ],
         "script_info": [
             "Denoiser type: ML",
-            "Use Color AOV: True"
+            "Color Only",
+            "F-16"
         ],
-        "scene": "DenoiserComplexLighting.blend",
-        "skip_config":[
-            ["Linux"]
-        ]
+        "scene": "DenoiserComplexLighting.blend"
     },
     {
         "case": "BL28_RS_DEN_062",
@@ -595,12 +595,10 @@
         ],
         "script_info": [
             "Denoiser type: ML",
-            "Use Color AOV: False"
+            "Color + AOV",
+            "F-16"
         ],
-        "scene": "DenoiserComplexLighting.blend",
-        "skip_config":[
-            ["Linux"]
-        ]
+        "scene": "DenoiserComplexLighting.blend"
     },
     {
         "case": "BL28_RS_DEN_063",
@@ -660,7 +658,8 @@
         ],
         "script_info": [
             "Denoiser type: ML",
-            "Use Color AOV: True"
+            "Color Only",
+            "F-16"
         ],
         "scene": "DenoiserMaterials.blend",
         "skip_config": [
@@ -680,7 +679,8 @@
         ],
         "script_info": [
             "Denoiser type: ML",
-            "Use Color AOV: False"
+            "Color + AOV",
+            "F-16"
         ],
         "scene": "DenoiserMaterials.blend",
         "skip_config": [
@@ -748,7 +748,8 @@
         "script_info": [
             "Shadow catcher",
             "Denoiser type: ML",
-            "Use Color AOV: True"
+            "Color Only",
+            "F-16"
         ],
         "scene": "DenoiserMaterials.blend",
         "skip_config": [
@@ -771,7 +772,8 @@
         "script_info": [
             "Shadow catcher",
             "Denoiser type: ML",
-            "Use Color AOV: False"
+            "Color + AOV",
+            "F-16"
         ],
         "scene": "DenoiserMaterials.blend",
         "skip_config": [
@@ -848,7 +850,8 @@
         "script_info": [
             "Reflection catcher",
             "Denoiser type: ML",
-            "Use Color AOV: True"
+            "Color Only",
+            "F-16"
         ],
         "scene": "DenoiserMaterials.blend",
         "skip_config": [
@@ -871,7 +874,8 @@
         "script_info": [
             "Reflection catcher",
             "Denoiser type: ML",
-            "Use Color AOV: False"
+            "Color + AOV",
+            "F-16"
         ],
         "scene": "DenoiserMaterials.blend",
         "skip_config": [
@@ -940,19 +944,20 @@
             "set_value(view_layer.rpr.denoiser, 'enable', True)",
             "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
             "set_value(view_layer.rpr.denoiser, 'ml_color_only', True)",
-            "set_value(bpy.context.scene.render, 'film_transparent', True)",
+            "set_value(view_layer.rpr.denoiser.render, 'film_transparent', True)",
             "rpr_render(case)",
-            "set_value(bpy.context.scene.render, 'film_transparent', False)",
+            "set_value(view_layer.rpr.denoiser.render, 'film_transparent', False)",
             "resetSceneAttributes()"
         ],
         "script_info": [
             "Transparent background",
             "Denoiser type: ML",
-            "Use Color AOV: True"
+            "Color Only",
+            "F-16"
         ],
         "scene": "DenoiserMaterials.blend",
         "skip_config": [
-            ["AMD Radeon VII"]
+            ["AMD Radeon RX Vega 56 (Metal)"]
         ]
     },
     {
@@ -963,19 +968,20 @@
             "set_value(view_layer.rpr.denoiser, 'enable', True)",
             "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
             "set_value(view_layer.rpr.denoiser, 'ml_color_only', False)",
-            "set_value(bpy.context.scene.render, 'film_transparent', True)",
+            "set_value(view_layer.rpr.denoiser.render, 'film_transparent', True)",
             "rpr_render(case)",
-            "set_value(bpy.context.scene.render, 'film_transparent', False)",
+            "set_value(view_layer.rpr.denoiser.render, 'film_transparent', False)",
             "resetSceneAttributes()"
         ],
         "script_info": [
             "Transparent background",
             "Denoiser type: ML",
-            "Use Color AOV: False"
+            "Color + AOV",
+            "F-16"
         ],
         "scene": "DenoiserMaterials.blend",
         "skip_config": [
-            ["AMD Radeon VII"]
+            ["AMD Radeon RX Vega 56 (Metal)"]
         ]
     },
     {
@@ -985,16 +991,19 @@
             "view_layer = bpy.context.view_layer",
             "set_value(view_layer.rpr.denoiser, 'enable', True)",
             "set_value(view_layer.rpr.denoiser, 'filter_type', 'EAW')",
-            "set_value(bpy.context.scene.render, 'film_transparent', True)",
+            "set_value(view_layer.rpr.denoiser.render, 'film_transparent', True)",
             "rpr_render(case)",
-            "set_value(bpy.context.scene.render, 'film_transparent', False)",
+            "set_value(view_layer.rpr.denoiser.render, 'film_transparent', False)",
             "resetSceneAttributes()"
         ],
         "script_info": [
             "Transparent background",
             "Denoiser type: EAW"
         ],
-        "scene": "DenoiserMaterials.blend"
+        "scene": "DenoiserMaterials.blend",
+        "skip_config": [
+            ["AMD Radeon RX Vega 56 (Metal)"]
+        ]
     },
     {
         "case": "BL28_RS_DEN_084",
@@ -1003,16 +1012,19 @@
             "view_layer = bpy.context.view_layer",
             "set_value(view_layer.rpr.denoiser, 'enable', True)",
             "set_value(view_layer.rpr.denoiser, 'filter_type', 'LWR')",
-            "set_value(bpy.context.scene.render, 'film_transparent', True)",
+            "set_value(view_layer.rpr.denoiser.render, 'film_transparent', True)",
             "rpr_render(case)",
-            "set_value(bpy.context.scene.render, 'film_transparent', False)",
+            "set_value(view_layer.rpr.denoiser.render, 'film_transparent', False)",
             "resetSceneAttributes()"
         ],
         "script_info": [
             "Transparent background",
             "Denoiser type: LWR"
         ],
-        "scene": "DenoiserMaterials.blend"
+        "scene": "DenoiserMaterials.blend",
+        "skip_config": [
+            ["AMD Radeon RX Vega 56 (Metal)"]
+        ]
     },
     {
         "case": "BL28_RS_DEN_085",
@@ -1021,16 +1033,19 @@
             "view_layer = bpy.context.view_layer",
             "set_value(view_layer.rpr.denoiser, 'enable', True)",
             "set_value(view_layer.rpr.denoiser, 'filter_type', 'BILATERAL')",
-            "set_value(bpy.context.scene.render, 'film_transparent', True)",
+            "set_value(view_layer.rpr.denoiser.render, 'film_transparent', True)",
             "rpr_render(case)",
-            "set_value(bpy.context.scene.render, 'film_transparent', False)",
+            "set_value(view_layer.rpr.denoiser.render, 'film_transparent', False)",
             "resetSceneAttributes()"
         ],
         "script_info": [
             "Transparent background",
             "Denoiser type: Bilateral"
         ],
-        "scene": "DenoiserMaterials.blend"
+        "scene": "DenoiserMaterials.blend",
+        "skip_config": [
+            ["AMD Radeon RX Vega 56 (Metal)"]
+        ]
     },
     {
         "case": "BL28_RS_DEN_086",
@@ -1040,15 +1055,16 @@
             "set_value(view_layer.rpr.denoiser, 'enable', True)",
             "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
             "set_value(view_layer.rpr.denoiser, 'ml_color_only', True)",
-            "set_value(bpy.context.scene.rpr, 'use_tile_render', True)",
+            "set_value(view_layer.rpr.denoiser.rpr, 'use_tile_render', True)",
             "rpr_render(case)",
-            "set_value(bpy.context.scene.rpr, 'use_tile_render', False)",
+            "set_value(view_layer.rpr.denoiser.rpr, 'use_tile_render', False)",
             "resetSceneAttributes()"
         ],
         "script_info": [
             "Tile rendering",
             "Denoiser type: ML",
-            "Use Color AOV: True"
+            "Color Only",
+            "F-16"
         ],
         "scene": "DenoiserMaterials.blend",
         "skip_config": [
@@ -1063,15 +1079,16 @@
             "set_value(view_layer.rpr.denoiser, 'enable', True)",
             "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
             "set_value(view_layer.rpr.denoiser, 'ml_color_only', False)",
-            "set_value(bpy.context.scene.rpr, 'use_tile_render', True)",
+            "set_value(view_layer.rpr.denoiser.rpr, 'use_tile_render', True)",
             "rpr_render(case)",
-            "set_value(bpy.context.scene.rpr, 'use_tile_render', False)",
+            "set_value(view_layer.rpr.denoiser.rpr, 'use_tile_render', False)",
             "resetSceneAttributes()"
         ],
         "script_info": [
             "Tile rendering",
             "Denoiser type: ML",
-            "Use Color AOV: False"
+            "Color + AOV",
+            "F-16"
         ],
         "scene": "DenoiserMaterials.blend",
         "skip_config": [
@@ -1085,9 +1102,9 @@
             "view_layer = bpy.context.view_layer",
             "set_value(view_layer.rpr.denoiser, 'enable', True)",
             "set_value(view_layer.rpr.denoiser, 'filter_type', 'EAW')",
-            "set_value(bpy.context.scene.rpr, 'use_tile_render', True)",
+            "set_value(view_layer.rpr.denoiser.rpr, 'use_tile_render', True)",
             "rpr_render(case)",
-            "set_value(bpy.context.scene.rpr, 'use_tile_render', False)",
+            "set_value(view_layer.rpr.denoiser.rpr, 'use_tile_render', False)",
             "resetSceneAttributes()"
         ],
         "script_info": [
@@ -1103,9 +1120,9 @@
             "view_layer = bpy.context.view_layer",
             "set_value(view_layer.rpr.denoiser, 'enable', True)",
             "set_value(view_layer.rpr.denoiser, 'filter_type', 'LWR')",
-            "set_value(bpy.context.scene.rpr, 'use_tile_render', True)",
+            "set_value(view_layer.rpr.denoiser.rpr, 'use_tile_render', True)",
             "rpr_render(case)",
-            "set_value(bpy.context.scene.rpr, 'use_tile_render', False)",
+            "set_value(view_layer.rpr.denoiser.rpr, 'use_tile_render', False)",
             "resetSceneAttributes()"
         ],
         "script_info": [
@@ -1121,9 +1138,9 @@
             "view_layer = bpy.context.view_layer",
             "set_value(view_layer.rpr.denoiser, 'enable', True)",
             "set_value(view_layer.rpr.denoiser, 'filter_type', 'BILATERAL')",
-            "set_value(bpy.context.scene.rpr, 'use_tile_render', True)",
+            "set_value(view_layer.rpr.denoiser.rpr, 'use_tile_render', True)",
             "rpr_render(case)",
-            "set_value(bpy.context.scene.rpr, 'use_tile_render', False)",
+            "set_value(view_layer.rpr.denoiser.rpr, 'use_tile_render', False)",
             "resetSceneAttributes()"
         ],
         "script_info": [
@@ -2272,5 +2289,290 @@
             "ID Sigma = 1"
         ],
         "scene": "Car_Demo.blend"
+    },
+    {
+        "case": "BL28_RS_DEN_147",
+        "status": "active",
+        "functions": [
+            "view_layer = bpy.context.view_layer",
+            "set_value(view_layer.rpr.denoiser, 'enable', True)",
+            "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
+            "set_value(view_layer.rpr.denoiser, 'ml_color_only', True)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = False",
+            "rpr_render(case)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = True",
+            "resetSceneAttributes()"
+        ],
+        "script_info": [
+            "Denoiser type: ML",
+            "Color only"
+        ],
+        "scene": "DenoiserComplexLighting.blend"
+    },
+    {
+        "case": "BL28_RS_DEN_148",
+        "status": "active",
+        "functions": [
+            "view_layer = bpy.context.view_layer",
+            "set_value(view_layer.rpr.denoiser, 'enable', True)",
+            "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
+            "set_value(view_layer.rpr.denoiser, 'ml_color_only', False)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = False",
+            "rpr_render(case)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = True",
+            "resetSceneAttributes()"
+        ],
+        "script_info": [
+            "Denoiser type: ML",
+            "Color + AOV"
+        ],
+        "scene": "DenoiserComplexLighting.blend"
+    },
+    {
+        "case": "BL28_RS_DEN_149",
+        "status": "active",
+        "functions": [
+            "view_layer = bpy.context.view_layer",
+            "set_value(view_layer.rpr.denoiser, 'enable', True)",
+            "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
+            "set_value(view_layer.rpr.denoiser, 'ml_color_only', True)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = False",
+            "rpr_render(case)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = True",
+            "resetSceneAttributes()"
+        ],
+        "script_info": [
+            "Denoiser type: ML",
+            "Color only"
+        ],
+        "scene": "DenoiserDOF.blend"
+    },
+    {
+        "case": "BL28_RS_DEN_150",
+        "status": "active",
+        "functions": [
+            "view_layer = bpy.context.view_layer",
+            "set_value(view_layer.rpr.denoiser, 'enable', True)",
+            "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
+            "set_value(view_layer.rpr.denoiser, 'ml_color_only', False)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = False",
+            "rpr_render(case)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = True",
+            "resetSceneAttributes()"
+        ],
+        "script_info": [
+            "Denoiser type: ML",
+            "Color + AOV"
+        ],
+        "scene": "DenoiserDOF.blend"
+    },
+    {
+        "case": "BL28_RS_DEN_151",
+        "status": "active",
+        "functions": [
+            "view_layer = bpy.context.view_layer",
+            "set_value(view_layer.rpr.denoiser, 'enable', True)",
+            "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
+            "set_value(view_layer.rpr.denoiser, 'ml_color_only', True)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = False",
+            "rpr_render(case)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = True",
+            "resetSceneAttributes()"
+        ],
+        "script_info": [
+            "Denoiser type: ML",
+            "Color only"
+        ],
+        "scene": "DenoiserIBL.blend"
+    },
+    {
+        "case": "BL28_RS_DEN_152",
+        "status": "active",
+        "functions": [
+            "view_layer = bpy.context.view_layer",
+            "set_value(view_layer.rpr.denoiser, 'enable', True)",
+            "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
+            "set_value(view_layer.rpr.denoiser, 'ml_color_only', False)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = False",
+            "rpr_render(case)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = True",
+            "resetSceneAttributes()"
+        ],
+        "script_info": [
+            "Denoiser type: ML",
+            "Color + AOV"
+        ],
+        "scene": "DenoiserIBL.blend"
+    },
+    {
+        "case": "BL28_RS_DEN_153",
+        "status": "active",
+        "functions": [
+            "view_layer = bpy.context.view_layer",
+            "set_value(view_layer.rpr.denoiser, 'enable', True)",
+            "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
+            "set_value(view_layer.rpr.denoiser, 'ml_color_only', True)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = False",
+            "rpr_render(case)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = True",
+            "resetSceneAttributes()"
+        ],
+        "script_info": [
+            "Denoiser type: ML",
+            "Color only"
+        ],
+        "scene": "DenoiserLight.blend"
+    },
+    {
+        "case": "BL28_RS_DEN_154",
+        "status": "active",
+        "functions": [
+            "view_layer = bpy.context.view_layer",
+            "set_value(view_layer.rpr.denoiser, 'enable', True)",
+            "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
+            "set_value(view_layer.rpr.denoiser, 'ml_color_only', False)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = False",
+            "rpr_render(case)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = True",
+            "resetSceneAttributes()"
+        ],
+        "script_info": [
+            "Denoiser type: ML",
+            "Color + AOV"
+        ],
+        "scene": "DenoiserLight.blend"
+    },
+    {
+        "case": "BL28_RS_DEN_155",
+        "status": "active",
+        "functions": [
+            "view_layer = bpy.context.view_layer",
+            "set_value(view_layer.rpr.denoiser, 'enable', True)",
+            "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
+            "set_value(view_layer.rpr.denoiser, 'ml_color_only', True)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = False",
+            "rpr_render(case)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = True",
+            "resetSceneAttributes()"
+        ],
+        "script_info": [
+            "Denoiser type: ML",
+            "Color only"
+        ],
+        "scene": "DenoiserMaterials.blend"
+    },
+    {
+        "case": "BL28_RS_DEN_156",
+        "status": "active",
+        "functions": [
+            "view_layer = bpy.context.view_layer",
+            "set_value(view_layer.rpr.denoiser, 'enable', True)",
+            "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
+            "set_value(view_layer.rpr.denoiser, 'ml_color_only', False)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = False",
+            "rpr_render(case)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = True",
+            "resetSceneAttributes()"
+        ],
+        "script_info": [
+            "Denoiser type: ML",
+            "Color + AOV"
+        ],
+        "scene": "DenoiserMaterials.blend"
+    },
+    {
+        "case": "BL28_RS_DEN_157",
+        "status": "active",
+        "functions": [
+            "view_layer = bpy.context.view_layer",
+            "set_value(view_layer.rpr.denoiser, 'enable', True)",
+            "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
+            "set_value(view_layer.rpr.denoiser, 'ml_color_only', True)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = False",
+            "rpr_render(case)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = True",
+            "resetSceneAttributes()"
+        ],
+        "script_info": [
+            "Denoiser type: ML",
+            "Color only"
+        ],
+        "scene": "DenoiserMetal.blend"
+    },
+    {
+        "case": "BL28_RS_DEN_158",
+        "status": "active",
+        "functions": [
+            "view_layer = bpy.context.view_layer",
+            "set_value(view_layer.rpr.denoiser, 'enable', True)",
+            "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
+            "set_value(view_layer.rpr.denoiser, 'ml_color_only', False)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = False",
+            "rpr_render(case)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = True",
+            "resetSceneAttributes()"
+        ],
+        "script_info": [
+            "Denoiser type: ML",
+            "Color + AOV"
+        ],
+        "scene": "DenoiserMetal.blend"
+    },
+    {
+        "case": "BL28_RS_DEN_159",
+        "status": "active",
+        "functions": [
+            "view_layer = bpy.context.view_layer",
+            "set_value(view_layer.rpr.denoiser, 'enable', True)",
+            "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
+            "set_value(view_layer.rpr.denoiser, 'ml_color_only', True)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = False",
+            "rpr_render(case)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = True",
+            "resetSceneAttributes()"
+        ],
+        "script_info": [
+            "Denoiser type: ML",
+            "Color only"
+        ],
+        "scene": "DualCpu.blend"
+    },
+    {
+        "case": "BL28_RS_DEN_160",
+        "status": "active",
+        "functions": [
+            "view_layer = bpy.context.view_layer",
+            "set_value(view_layer.rpr.denoiser, 'enable', True)",
+            "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
+            "set_value(view_layer.rpr.denoiser, 'ml_color_only', False)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = False",
+            "rpr_render(case)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = True",
+            "resetSceneAttributes()"
+        ],
+        "script_info": [
+            "Denoiser type: ML",
+            "Color + AOV"
+        ],
+        "scene": "DualCpu.blend"
+    },
+    {
+        "case": "BL28_RS_DEN_161",
+        "status": "active",
+        "functions": [
+            "view_layer = bpy.context.view_layer",
+            "set_value(view_layer.rpr.denoiser, 'enable', True)",
+            "set_value(view_layer.rpr.denoiser, 'filter_type', 'ML')",
+            "set_value(view_layer.rpr.denoiser, 'ml_color_only', True)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = False",
+            "rpr_render(case)",
+            "view_layer.rpr.denoiser.ml_use_fp16_compute_type = True",
+            "resetSceneAttributes()"
+        ],
+        "script_info": [
+            "Denoiser type: ML",
+            "Color only"
+        ],
+        "scene": "DenoiserMetal.blend"
     }
 ]

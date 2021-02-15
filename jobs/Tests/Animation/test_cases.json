@@ -10,10 +10,7 @@
             "Frame: 41",
             "https://amdrender.atlassian.net/browse/RPRBLND-1533"
         ],
-        "scene": "Keyed_Animation.blend",
-        "skip_engine": [
-            "FULL2"
-        ]
+        "scene": "Keyed_Animation.blend"
     },
     {
         "case": "BL28_RS_AN_002",
@@ -26,10 +23,7 @@
             "Frame: 85",
             "https://amdrender.atlassian.net/browse/RPRBLND-1533"
         ],
-        "scene": "Keyed_Animation.blend",
-        "skip_engine": [
-            "FULL2"
-        ]
+        "scene": "Keyed_Animation.blend"
     },
     {
         "case": "BL28_RS_AN_003",
@@ -42,10 +36,7 @@
             "Frame: 150",
             "https://amdrender.atlassian.net/browse/RPRBLND-1533"
         ],
-        "scene": "Keyed_Animation.blend",
-        "skip_engine": [
-            "FULL2"
-        ]
+        "scene": "Keyed_Animation.blend"
     },
     {
         "case": "BL28_RS_AN_004",
