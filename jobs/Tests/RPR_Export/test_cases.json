@@ -1,28 +1,80 @@
 [
     {
-        "case": "ex1",
+        "case": "BL28_RS_EXP_001",
         "status": "active",
         "functions": [
-            "bpy.ops.rpr.export_scene_rpr(filepath=WORK_DIR + \"\\ex1.rpr\", check_existing=True, filter_glob=\"*.rpr\", export_animation=False, export_as_single_file=False, compression='LOW', start_frame=0, end_frame=0)",
+            "bpy.ops.rpr.export_scene_rpr(filepath=os.path.join(WORK_DIR, 'BL28_RS_EXP_001.rpr'), check_existing=True, filter_glob=\"*.rpr\", export_animation=False, export_as_single_file=False, compression='LOW', start_frame=0, end_frame=0, use_image_cache=False)",
             "core_Render(case)"
         ],
         "script_info": [
-            "Result of the Core rendering"
+            "Default"
         ],
-        "scene": "EmissiveLight.blend",
+        "scene": "medium.blend",
         "extension": ".png"
     },
     {
-        "case": "ex2",
+        "case": "BL28_RS_EXP_002",
         "status": "active",
         "functions": [
-            "bpy.ops.rpr.export_scene_rpr(filepath=WORK_DIR + \"\\ex2.rpr\", check_existing=True, filter_glob=\"*.rpr\", export_animation=False, export_as_single_file=False, compression='LOW', start_frame=0, end_frame=0)",
+            "bpy.ops.rpr.export_scene_rpr(filepath=os.path.join(WORK_DIR, 'BL28_RS_EXP_002.rpr'), check_existing=True, filter_glob=\"*.rpr\", export_animation=False, export_as_single_file=False, compression='LOW', start_frame=0, end_frame=0, use_image_cache=True)",
             "core_Render(case)"
         ],
         "script_info": [
-            "Result of the Core rendering"
+            "Use image cache"
         ],
-        "scene": "EmissiveLight.blend",
+        "scene": "medium.blend",
+        "extension": ".png"
+    },
+    {
+        "case": "BL28_RS_EXP_003",
+        "status": "active",
+        "functions": [
+            "bpy.ops.rpr.export_scene_rpr(filepath=os.path.join(WORK_DIR, 'BL28_RS_EXP_003.rpr'), check_existing=True, filter_glob=\"*.rpr\", export_animation=False, export_as_single_file=False, compression='MEDIUM', start_frame=0, end_frame=0, use_image_cache=False)",
+            "core_Render(case)"
+        ],
+        "script_info": [
+            "Medium compression"
+        ],
+        "scene": "medium.blend",
+        "extension": ".png"
+    },
+    {
+        "case": "BL28_RS_EXP_004",
+        "status": "active",
+        "functions": [
+            "bpy.ops.rpr.export_scene_rpr(filepath=os.path.join(WORK_DIR, 'BL28_RS_EXP_004.rpr'), check_existing=True, filter_glob=\"*.rpr\", export_animation=False, export_as_single_file=False, compression='HIGH', start_frame=0, end_frame=0, use_image_cache=False)",
+            "core_Render(case)"
+        ],
+        "script_info": [
+            "High compression"
+        ],
+        "scene": "medium.blend",
+        "extension": ".png"
+    },
+    {
+        "case": "BL28_RS_EXP_005",
+        "status": "active",
+        "functions": [
+            "bpy.ops.rpr.export_scene_rpr(filepath=os.path.join(WORK_DIR, 'BL28_RS_EXP_005.rpr'), check_existing=True, filter_glob=\"*.rpr\", export_animation=False, export_as_single_file=False, compression='NONE', start_frame=0, end_frame=0, use_image_cache=False)",
+            "core_Render(case)"
+        ],
+        "script_info": [
+            "No compression"
+        ],
+        "scene": "medium.blend",
+        "extension": ".png"
+    },
+    {
+        "case": "BL28_RS_EXP_006",
+        "status": "active",
+        "functions": [
+            "bpy.ops.rpr.export_scene_rpr(filepath=os.path.join(WORK_DIR, 'BL28_RS_EXP_006.rpr'), check_existing=True, filter_glob=\"*.rpr\", export_animation=False, export_as_single_file=False, compression='NONE', start_frame=0, end_frame=0, use_image_cache=False)",
+            "core_Render(case)"
+        ],
+        "script_info": [
+            "No compression"
+        ],
+        "scene": "medium.blend",
         "extension": ".png"
     }
 ]
