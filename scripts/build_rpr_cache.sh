@@ -13,4 +13,4 @@ echo "material = bpy.data.materials['Material']" >> cache_build.py
 echo "material_library.import_xml_material(material, 'Material', xml_path, False)" >> cache_build.py
 echo "bpy.ops.render.render(write_still=True)" >> cache_build.py
 
-blender"$TOOL" -b "$CIS_TOOLS/../TestResources/rpr_blender_autotests/Materials/Test_Scene.blend" -E RPR -P "cache_build.py"
+blender"$TOOL" -b "$CIS_TOOLS/../TestResources/rpr_blender_autotests_assets/Materials/Test_Scene.blend" -E RPR -P "cache_build.py"
