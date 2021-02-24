@@ -459,7 +459,8 @@
         ],
         "scene": "greasepencil-bike.blend",
         "skip_config": [
-            ["AMD Radeon RX Vega 56 (Metal)"]
+            ["AMD Radeon RX Vega 56 (Metal)"],
+            ["AMD Radeon RX 6800"]
         ]
     },
     {
