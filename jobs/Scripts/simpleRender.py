@@ -50,6 +50,7 @@ def createArgsParser():
                         default=0.05, type=float)
     parser.add_argument('--retries', required=False, default=2, type=int)
     parser.add_argument('--update_refs', required=True)
+    parser.add_argument('--stucking_time', required=False, default=180, type=int)
 
     return parser
 
@@ -307,19 +308,24 @@ def main(args):
 
     rc = None
 
-    timeout=420
+    restart_timeout = args.stucking_time
+    current_restart_timeout = restart_timeout
     while rc is None:
         start_time = datetime.now()
-        while (datetime.now() - start_time).total_seconds() <= timeout:
+        while (datetime.now() - start_time).total_seconds() <= 40:
             time.sleep(1)
             if p.poll() is not None:
                 rc = 0
                 break
         else:
+            current_restart_timeout -= 40
             new_done_test_cases_num = get_finished_cases_number(args.output)
             if new_done_test_cases_num == -1:
                 core_config.main_logger.error('Failed to get number of finished cases. Try to do that on next iteration')
-            elif prev_done_test_cases == new_done_test_cases_num:
+            elif prev_done_test_cases != new_done_test_cases_num:
+                prev_done_test_cases = new_done_test_cases_num
+                current_restart_timeout = restart_timeout
+            elif current_restart_timeout <= 0:
                 # if number of finished cases wasn't increased - Blender got stuck
                 core_config.main_logger.error('Blender got stuck.')
                 rc = -1
@@ -327,8 +333,6 @@ def main(args):
                 time.sleep(10)
                 p.kill()
                 break
-            else:
-                prev_done_test_cases = new_done_test_cases_num
     stop_threads = True
 
     perf_count.event_record(args.output, 'Close tool', False)
