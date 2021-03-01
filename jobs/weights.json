@@ -1,0 +1,148 @@
+{
+    "weights": [
+        {
+            "suite_name": "RPR_Nodes",
+            "value": 6963
+        },
+        {
+            "suite_name": "Denoiser",
+            "value": 3176
+        },
+        {
+            "suite_name": "Physical_Lights",
+            "value": 2112
+        },
+        {
+            "suite_name": "Material_Library",
+            "value": 2025
+        },
+        {
+            "suite_name": "Cloud",
+            "value": 1576
+        },
+        {
+            "suite_name": "Color_Managment",
+            "value": 1466
+        },
+        {
+            "suite_name": "Render_Layer",
+            "value": 1380
+        },
+        {
+            "suite_name": "Uber",
+            "value": 1368
+        },
+        {
+            "suite_name": "Principled_BSDF",
+            "value": 1123
+        },
+        {
+            "suite_name": "IBL",
+            "value": 1038
+        },
+        {
+            "suite_name": "Smoke",
+            "value": 1027
+        },
+        {
+            "suite_name": "Image_Node",
+            "value": 968
+        },
+        {
+            "suite_name": "Image_Formats",
+            "value": 924
+        },
+        {
+            "suite_name": "Mapping",
+            "value": 760
+        },
+        {
+            "suite_name": "Dual_Mode",
+            "value": 670
+        },
+        {
+            "suite_name": "Compositor",
+            "value": 627
+        },
+        {
+            "suite_name": "Render_Mode",
+            "value": 582
+        },
+        {
+            "suite_name": "Pixel_Filter",
+            "value": 570
+        },
+        {
+            "suite_name": "Adaptive_Sampling",
+            "value": 528
+        },
+        {
+            "suite_name": "Hair_BSDF",
+            "value": 492
+        },
+        {
+            "suite_name": "AOV",
+            "value": 484
+        },
+        {
+            "suite_name": "Image_Size",
+            "value": 386
+        },
+        {
+            "suite_name": "Quality",
+            "value": 322
+        },
+        {
+            "suite_name": "Sun_Sky",
+            "value": 286
+        },
+        {
+            "suite_name": "Subdivision",
+            "value": 269
+        },
+        {
+            "suite_name": "Camera",
+            "value": 251
+        },
+        {
+            "suite_name": "Import_Export",
+            "value": 171
+        },
+        {
+            "suite_name": "Motion_Blur",
+            "value": 155
+        },
+        {
+            "suite_name": "Particles",
+            "value": 105
+        },
+        {
+            "suite_name": "Animation",
+            "value": 95
+        },
+        {
+            "suite_name": "IES",
+            "value": 69
+        },
+        {
+            "suite_name": "Athena",
+            "value": 69
+        },
+        {
+            "suite_name": "Emissive_Light",
+            "value": 48
+        },
+        {
+            "suite_name": "CPU_Mode",
+            "value": 47
+        },
+        {
+            "suite_name": "Render_Stamp",
+            "value": 32
+        },
+        {
+            "suite_name": "IES_Intensity",
+            "value": 31
+        }
+    ]
+}
