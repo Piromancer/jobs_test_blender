@@ -86,7 +86,7 @@
     },
     {
         "case": "BL28_BCS_007",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 2)",
             "set_value(bpy.context.scene.world.rpr.ibl, 'image', bpy.data.images['00-1.jpg'])",
@@ -103,7 +103,7 @@
     },
     {
         "case": "BL28_BCS_008",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 0.3)",
             "set_value(bpy.context.scene.world.rpr.ibl, 'image', bpy.data.images['mossy_forest_4k.hdr'])",
@@ -120,7 +120,7 @@
     },
     {
         "case": "BL28_BCS_009",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 0.5)",
             "set_value(bpy.context.scene.world.rpr.ibl, 'image', bpy.data.images['img_47ac655412c2fc4f73d9bcac8ee12a87.jpg'])",
@@ -136,7 +136,7 @@
     },
     {
         "case": "BL28_BCS_010",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 2.2)",
             "set_value(bpy.context.scene.world.rpr.ibl, 'image', bpy.data.images['moon_v001.png.001'])",
@@ -151,7 +151,7 @@
     },
     {
         "case": "BL28_BCS_011",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 0.1)",
             "set_value(bpy.context.scene.world.rpr.ibl, 'image', bpy.data.images['pond_bridge_night_4k.hdr'])",
@@ -164,7 +164,7 @@
     },
     {
         "case": "BL28_BCS_012",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 0)",
             "set_value(bpy.context.scene.world.rpr, 'ibl.color[0]', 0.061)",
@@ -179,7 +179,7 @@
     },
     {
         "case": "BL28_BCS_013",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 0.1)",
             "set_value(bpy.context.scene.world.rpr.ibl, 'image', bpy.data.images['fin4_Env.hdr'])",
@@ -195,7 +195,7 @@
     },
     {
         "case": "BL28_BCS_014",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
@@ -231,7 +231,7 @@
     },
     {
         "case": "BL28_BCS_017",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 1)",
             "set_value(bpy.context.scene.world.rpr, 'ibl.color[0]', 0.369)",
@@ -246,7 +246,7 @@
     },
     {
         "case": "BL28_BCS_018",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 0)",
             "set_value(bpy.context.scene.world.rpr, 'ibl.color[0]', 0)",
@@ -264,7 +264,7 @@
     },
     {
         "case": "BL28_BCS_019",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'mode', 'SUN_SKY')",
             "set_value(bpy.context.scene.world.rpr, 'intensity', 1)",
@@ -291,7 +291,7 @@
     },
     {
         "case": "BL28_BCS_021",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
@@ -305,7 +305,7 @@
     },
     {
         "case": "BL28_BCS_022",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'mode', 'SUN_SKY')",
             "set_value(bpy.context.scene.world.rpr, 'intensity', 0.1)",
@@ -318,7 +318,7 @@
     },
     {
         "case": "BL28_BCS_023",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 1)",
             "set_value(bpy.context.scene.world.rpr.ibl, 'image', bpy.data.images['coffee_panorama_550.jpg'])",
@@ -331,7 +331,7 @@
     },
     {
         "case": "BL28_BCS_024",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 1)",
             "set_value(bpy.context.scene.world.rpr, 'ibl.color[0]', 0)",
@@ -349,7 +349,7 @@
     },
     {
         "case": "BL28_BCS_025",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 0.3)",
             "set_value(bpy.context.scene.world.rpr, 'ibl.color[0]', 0.433)",
@@ -364,7 +364,7 @@
     },
     {
         "case": "BL28_BCS_026",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 0.6)",
             "set_value(bpy.context.scene.world.rpr.ibl, 'image', bpy.data.images['coffee_panorama_550.jpg'])",
@@ -380,7 +380,7 @@
     },
     {
         "case": "BL28_BCS_027",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
@@ -394,7 +394,7 @@
     },
     {
         "case": "BL28_BCS_028",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "bpy.data.collections['Volumetrics'].hide_render = True",
             "set_value(bpy.context.scene.world.rpr, 'intensity', 0.5)",
@@ -421,7 +421,7 @@
     },
     {
         "case": "BL28_BCS_029",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'ibl.color[0]', 0.082)",
             "set_value(bpy.context.scene.world.rpr, 'ibl.color[1]', 0.252)",
@@ -435,7 +435,7 @@
     },
     {
         "case": "BL28_BCS_030",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "bpy.ops.rpr.bake_all_nodes()",
             "rpr_render(case)"
@@ -450,7 +450,7 @@
     },
     {
         "case": "BL28_BCS_031",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
@@ -465,7 +465,7 @@
     },
     {
         "case": "BL28_BCS_032",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 1)",
             "set_value(bpy.context.scene.world.rpr, 'ibl.color[0]', 0.061)",
@@ -480,7 +480,7 @@
     },
     {
         "case": "BL28_BCS_033",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
@@ -491,7 +491,7 @@
     },
     {
         "case": "BL28_BCS_034",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 1)",
             "set_value(bpy.context.scene.world.rpr, 'ibl.color[0]', 0.080)",
@@ -517,7 +517,7 @@
     },
     {
         "case": "BL28_BCS_036",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
@@ -581,5 +581,116 @@
             "Nishita Sky"
         ],
         "scene": "290skydemo_release.blend"
+    },
+    {
+        "case": "BL28_BCS_042",
+        "status": "active",
+        "functions": [
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Lone Monk"
+        ],
+        "scene": "lone-monk_cycles_and_exposure-node_demo.blend"
+    },
+    {
+        "case": "BL28_BCS_043",
+        "status": "active",
+        "functions": [
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Fluid simulation - APIC vs FLIP solver"
+        ],
+        "scene": "fluid-simulation_flip_vs_apic_solver.blend"
+    },
+    {
+        "case": "BL28_BCS_044",
+        "status": "active",
+        "functions": [
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Pebbles Scattering"
+        ],
+        "scene": "pebble_scattering.blend"
+    },
+    {
+        "case": "BL28_BCS_045",
+        "status": "active",
+        "functions": [
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Text morph"
+        ],
+        "scene": "text-morph_geometry-nodes-demo.blend"
+    },
+    {
+        "case": "BL28_BCS_046",
+        "status": "active",
+        "functions": [
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Cubic whirlpool"
+        ],
+        "scene": "cubic-whirlpool_geometry-nodes-demo.blend"
+    },
+    {
+        "case": "BL28_BCS_047",
+        "status": "active",
+        "functions": [
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Spherical eye"
+        ],
+        "scene": "spherical-eye_geometry-nodes-demo.blend"
+    },
+    {
+        "case": "BL28_BCS_048",
+        "status": "active",
+        "functions": [
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Sculpt Grab Silhouette"
+        ],
+        "scene": "01_sculpt_grab_silhouette.blend"
+    },
+    {
+        "case": "BL28_BCS_049",
+        "status": "active",
+        "functions": [
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Elastic Deform: Snake Hook"
+        ],
+        "scene": "02_elastic_deform_snake_hook.blend"
+    },
+    {
+        "case": "BL28_BCS_050",
+        "status": "active",
+        "functions": [
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Multires Displacement Smear"
+        ],
+        "scene": "03_multires_displacement_smear.blend"
+    },
+    {
+        "case": "BL28_BCS_051",
+        "status": "active",
+        "functions": [
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "VSE media transform"
+        ],
+        "scene": "vse_media-transform.blend"
     }
 ]
+ 
