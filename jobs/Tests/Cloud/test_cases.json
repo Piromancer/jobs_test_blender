@@ -1,7 +1,7 @@
 [
     {
         "case": "BL28_BCS_001",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "rpr_render(case)"
         ],
@@ -27,7 +27,7 @@
     },
     {
         "case": "BL28_BCS_003",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 0.26)",
             "set_value(bpy.context.scene.world.rpr, 'ibl.color[0]', 0.122)",
@@ -55,7 +55,7 @@
     },
     {
         "case": "BL28_BCS_005",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 0.3)",
             "set_value(bpy.context.scene.render, 'use_single_layer', True)",
@@ -72,7 +72,7 @@
     },
     {
         "case": "BL28_BCS_006",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "rpr_render(case)"
         ],
@@ -206,7 +206,7 @@
     },
     {
         "case": "BL28_BCS_015",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "rpr_render(case)"
         ],
@@ -217,7 +217,7 @@
     },
     {
         "case": "BL28_BCS_016",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 2)",
             "set_value(bpy.context.scene.world.rpr.ibl, 'image', bpy.data.images['env_island.exr'])",
@@ -280,7 +280,7 @@
     },
     {
         "case": "BL28_BCS_020",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "rpr_render(case)"
         ],
@@ -506,7 +506,7 @@
     },
     {
         "case": "BL28_BCS_035",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "rpr_render(case)"
         ],
@@ -528,7 +528,7 @@
     },
     {
         "case": "BL28_BCS_037",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "rpr_render(case)"
         ],
@@ -539,7 +539,7 @@
     },
     {
         "case": "BL28_BCS_038",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "rpr_render(case)"
         ],
@@ -550,7 +550,7 @@
     },
     {
         "case": "BL28_BCS_039",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "rpr_render(case)"
         ],
@@ -600,23 +600,12 @@
             "rpr_render(case)"
         ],
         "script_info": [
-            "Fluid simulation - APIC vs FLIP solver"
-        ],
-        "scene": "fluid-simulation_flip_vs_apic_solver.blend"
-    },
-    {
-        "case": "BL28_BCS_044",
-        "status": "active",
-        "functions": [
-            "rpr_render(case)"
-        ],
-        "script_info": [
             "Pebbles Scattering"
         ],
         "scene": "pebble_scattering.blend"
     },
     {
-        "case": "BL28_BCS_045",
+        "case": "BL28_BCS_044",
         "status": "active",
         "functions": [
             "rpr_render(case)"
@@ -627,7 +616,7 @@
         "scene": "text-morph_geometry-nodes-demo.blend"
     },
     {
-        "case": "BL28_BCS_046",
+        "case": "BL28_BCS_045",
         "status": "active",
         "functions": [
             "rpr_render(case)"
@@ -638,7 +627,7 @@
         "scene": "cubic-whirlpool_geometry-nodes-demo.blend"
     },
     {
-        "case": "BL28_BCS_047",
+        "case": "BL28_BCS_046",
         "status": "active",
         "functions": [
             "rpr_render(case)"
@@ -649,7 +638,7 @@
         "scene": "spherical-eye_geometry-nodes-demo.blend"
     },
     {
-        "case": "BL28_BCS_048",
+        "case": "BL28_BCS_047",
         "status": "active",
         "functions": [
             "rpr_render(case)"
@@ -660,7 +649,7 @@
         "scene": "01_sculpt_grab_silhouette.blend"
     },
     {
-        "case": "BL28_BCS_049",
+        "case": "BL28_BCS_048",
         "status": "active",
         "functions": [
             "rpr_render(case)"
@@ -671,7 +660,7 @@
         "scene": "02_elastic_deform_snake_hook.blend"
     },
     {
-        "case": "BL28_BCS_050",
+        "case": "BL28_BCS_049",
         "status": "active",
         "functions": [
             "rpr_render(case)"
@@ -682,8 +671,8 @@
         "scene": "03_multires_displacement_smear.blend"
     },
     {
-        "case": "BL28_BCS_051",
-        "status": "active",
+        "case": "BL28_BCS_050",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
@@ -691,6 +680,42 @@
             "Blender 2.92"
         ],
         "scene": "Blender2.92.blend"
+    },
+    {
+        "case": "BL28_BCS_052",
+        "status": "active",
+        "functions": [
+            "bpy.context.scene.frame_set(0)",
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Fluid simulation - APIC vs FLIP solver"
+        ],
+        "scene": "fluid-simulation_flip_vs_apic_solver.blend"
+    },
+    {
+        "case": "BL28_BCS_053",
+        "status": "active",
+        "functions": [
+            "bpy.context.scene.frame_set(48)",
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Fluid simulation - APIC vs FLIP solver"
+        ],
+        "scene": "fluid-simulation_flip_vs_apic_solver.blend"
+    },
+    {
+        "case": "BL28_BCS_053",
+        "status": "active",
+        "functions": [
+            "bpy.context.scene.frame_set(90)",
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Fluid simulation - APIC vs FLIP solver"
+        ],
+        "scene": "fluid-simulation_flip_vs_apic_solver.blend"
     }
 ]
  
