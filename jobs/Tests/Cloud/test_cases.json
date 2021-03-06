@@ -280,7 +280,7 @@
     },
     {
         "case": "BL28_BCS_020",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
@@ -450,7 +450,7 @@
     },
     {
         "case": "BL28_BCS_031",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
@@ -506,7 +506,7 @@
     },
     {
         "case": "BL28_BCS_035",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
@@ -528,7 +528,7 @@
     },
     {
         "case": "BL28_BCS_037",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
@@ -539,7 +539,7 @@
     },
     {
         "case": "BL28_BCS_038",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
@@ -550,7 +550,7 @@
     },
     {
         "case": "BL28_BCS_039",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
@@ -706,7 +706,7 @@
         "scene": "fluid-simulation_flip_vs_apic_solver.blend"
     },
     {
-        "case": "BL28_BCS_053",
+        "case": "BL28_BCS_054",
         "status": "active",
         "functions": [
             "bpy.context.scene.frame_set(90)",
