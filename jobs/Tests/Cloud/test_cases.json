@@ -55,7 +55,7 @@
     },
     {
         "case": "BL28_BCS_005",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 0.3)",
             "set_value(bpy.context.scene.render, 'use_single_layer', True)",
@@ -206,7 +206,7 @@
     },
     {
         "case": "BL28_BCS_015",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "rpr_render(case)"
         ],
@@ -217,7 +217,7 @@
     },
     {
         "case": "BL28_BCS_016",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 2)",
             "set_value(bpy.context.scene.world.rpr.ibl, 'image', bpy.data.images['env_island.exr'])",
@@ -280,7 +280,7 @@
     },
     {
         "case": "BL28_BCS_020",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "rpr_render(case)"
         ],
@@ -506,7 +506,7 @@
     },
     {
         "case": "BL28_BCS_035",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "rpr_render(case)"
         ],
@@ -528,7 +528,7 @@
     },
     {
         "case": "BL28_BCS_037",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "rpr_render(case)"
         ],
@@ -539,7 +539,7 @@
     },
     {
         "case": "BL28_BCS_038",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "rpr_render(case)"
         ],
@@ -550,7 +550,7 @@
     },
     {
         "case": "BL28_BCS_039",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "rpr_render(case)"
         ],
@@ -672,7 +672,7 @@
     },
     {
         "case": "BL28_BCS_050",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "rpr_render(case)"
         ],
