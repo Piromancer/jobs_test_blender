@@ -206,7 +206,7 @@
     },
     {
         "case": "BL28_BCS_015",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
@@ -217,7 +217,7 @@
     },
     {
         "case": "BL28_BCS_016",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "set_value(bpy.context.scene.world.rpr, 'intensity', 2)",
             "set_value(bpy.context.scene.world.rpr.ibl, 'image', bpy.data.images['env_island.exr'])",
@@ -528,7 +528,7 @@
     },
     {
         "case": "BL28_BCS_037",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
