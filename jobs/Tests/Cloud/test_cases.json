@@ -450,7 +450,7 @@
     },
     {
         "case": "BL28_BCS_031",
-        "status": "skipped",
+        "status": "active",
         "functions": [
             "rpr_render(case)"
         ],
@@ -539,7 +539,7 @@
     },
     {
         "case": "BL28_BCS_038",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
@@ -550,7 +550,7 @@
     },
     {
         "case": "BL28_BCS_039",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
