@@ -8,7 +8,10 @@
         "script_info": [
             "Blender_2_81_the_junk_Shop"
         ],
-        "scene": "Blender_2_81_the_junk_Shop.blend"
+        "scene": "Blender_2_81_the_junk_Shop.blend",
+        "skip_engine": [
+            ["Tahoe"]
+        ]
     },
     {
         "case": "BL28_BCS_002",
@@ -82,6 +85,9 @@
         "scene": "Blender_2_74_Fishy_Cat.blend",
         "skip_config": [
             ["GeForce GTX 1080 Ti"]
+        ],
+        "skip_engine": [
+            ["Tahoe"]
         ]
     },
     {
