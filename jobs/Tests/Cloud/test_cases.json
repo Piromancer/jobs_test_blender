@@ -689,7 +689,8 @@
             "rpr_render(case)"
         ],
         "script_info": [
-            "Fluid simulation - APIC vs FLIP solver"
+            "Fluid simulation - APIC vs FLIP solver",
+            "Frame 0"
         ],
         "scene": "fluid-simulation_flip_vs_apic_solver.blend"
     },
@@ -701,7 +702,8 @@
             "rpr_render(case)"
         ],
         "script_info": [
-            "Fluid simulation - APIC vs FLIP solver"
+            "Fluid simulation - APIC vs FLIP solver",
+            "Frame 48"
         ],
         "scene": "fluid-simulation_flip_vs_apic_solver.blend"
     },
@@ -713,7 +715,8 @@
             "rpr_render(case)"
         ],
         "script_info": [
-            "Fluid simulation - APIC vs FLIP solver"
+            "Fluid simulation - APIC vs FLIP solver",
+            "Frame 90"
         ],
         "scene": "fluid-simulation_flip_vs_apic_solver.blend"
     }
