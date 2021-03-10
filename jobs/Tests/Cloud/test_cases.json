@@ -691,19 +691,6 @@
         "case": "BL28_BCS_051",
         "status": "active",
         "functions": [
-            "bpy.context.scene.frame_set(0)",
-            "rpr_render(case)"
-        ],
-        "script_info": [
-            "Fluid simulation - APIC vs FLIP solver",
-            "Frame 0"
-        ],
-        "scene": "fluid-simulation_flip_vs_apic_solver.blend"
-    },
-    {
-        "case": "BL28_BCS_052",
-        "status": "active",
-        "functions": [
             "bpy.context.scene.frame_set(48)",
             "rpr_render(case)"
         ],
@@ -714,17 +701,15 @@
         "scene": "fluid-simulation_flip_vs_apic_solver.blend"
     },
     {
-        "case": "BL28_BCS_053",
+        "case": "BL28_BCS_052",
         "status": "active",
         "functions": [
-            "bpy.context.scene.frame_set(90)",
             "rpr_render(case)"
         ],
         "script_info": [
-            "Fluid simulation - APIC vs FLIP solver",
-            "Frame 90"
+            "Monster under the bed"
         ],
-        "scene": "fluid-simulation_flip_vs_apic_solver.blend"
+        "scene": "monster_under_the_bed.blend"
     }
 ]
  
