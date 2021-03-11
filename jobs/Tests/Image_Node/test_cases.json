@@ -43,28 +43,6 @@
         "scene": "BoxMapping.blend"
     },
     {
-        "case": "BL28_MAT_IMAGE_003",
-        "status": "active",
-        "functions": [
-            "bpy.ops.image.open(filepath='//Materials/Maps/Dice.1001.jpg', directory=RES_PATH + '//Maps//', files=[{'name':'Dice.1001.jpg'}, {'name':'Dice.1002.jpg'}, {'name':'Dice.1003.jpg'}, {'name':'Dice.1004.jpg'}, {'name':'Dice.1005.jpg'}, {'name':'Dice.1006.jpg'}], relative_path=True, show_multiview=False)",
-            "Im_node().image = bpy.data.images['Dice.1001.jpg']",
-            "Im_node().interpolation = 'Linear'",
-            "Im_node().projection = 'FLAT'",
-            "Im_node().extension = 'EXTEND'",
-            "bpy.data.images['Dice.1001.jpg'].source = 'TILED'",
-            "bpy.data.images['Dice.1001.jpg'].colorspace_settings.name = 'Raw'",
-            "rpr_render(case)"
-        ],
-        "script_info": [
-            "Interpolation: Linear",
-            "Projection: Flat",
-            "Extension: Extend",
-            "Source: UDIM Tiles",
-            "Color Space: RAW"
-        ],
-        "scene": "BoxMapping.blend"
-    },
-    {
         "case": "BL28_MAT_IMAGE_004",
         "status": "active",
         "functions": [
@@ -83,28 +61,6 @@
             "Extension: Clip",
             "Source: Generated",
             "Color Space: RAW"
-        ],
-        "scene": "BoxMapping.blend"
-    },
-    {
-        "case": "BL28_MAT_IMAGE_005",
-        "status": "active",
-        "functions": [
-            "bpy.ops.image.open(filepath='//Materials/Maps/Dice.1001.jpg', directory=RES_PATH + '//Maps//', files=[{'name':'Dice.1001.jpg'}, {'name':'Dice.1002.jpg'}, {'name':'Dice.1003.jpg'}, {'name':'Dice.1004.jpg'}, {'name':'Dice.1005.jpg'}, {'name':'Dice.1006.jpg'}], relative_path=True, show_multiview=False)",
-            "Im_node().image = bpy.data.images['Dice.1001.jpg']",
-            "Im_node().interpolation = 'Closest'",
-            "Im_node().projection = 'SPHERE'",
-            "Im_node().extension = 'REPEAT'",
-            "bpy.data.images['Dice.1001.jpg'].source = 'TILED'",
-            "bpy.data.images['Dice.1001.jpg'].colorspace_settings.name = 'sRGB'",
-            "rpr_render(case)"
-        ],
-        "script_info": [
-            "Interpolation: Closest",
-            "Projection: Sphere",
-            "Extension: Repeat",
-            "Source: UDIM Tiles",
-            "Color Space: sRGB"
         ],
         "scene": "BoxMapping.blend"
     },
@@ -289,28 +245,6 @@
         "scene": "BoxMapping.blend"
     },
     {
-        "case": "BL28_MAT_IMAGE_014",
-        "status": "active",
-        "functions": [
-            "bpy.ops.image.open(filepath='//Materials/Maps/Dice.1001.jpg', directory=RES_PATH + '//Maps//', files=[{'name':'Dice.1001.jpg'}, {'name':'Dice.1002.jpg'}, {'name':'Dice.1003.jpg'}, {'name':'Dice.1004.jpg'}, {'name':'Dice.1005.jpg'}, {'name':'Dice.1006.jpg'}], relative_path=True, show_multiview=False)",
-            "Im_node().image = bpy.data.images['Dice.1001.jpg']",
-            "Im_node().interpolation = 'Cubic'",
-            "Im_node().projection = 'FLAT'",
-            "Im_node().extension = 'CLIP'",
-            "bpy.data.images['Dice.1001.jpg'].source = 'TILED'",
-            "bpy.data.images['Dice.1001.jpg'].colorspace_settings.name = 'XYZ'",
-            "rpr_render(case)"
-        ],
-        "script_info": [
-            "Interpolation: Cubic",
-            "Projection: Flat",
-            "Extension: Clip",
-            "Source: UDIM Tiles",
-            "Color Space: XYZ"
-        ],
-        "scene": "BoxMapping.blend"
-    },
-    {
         "case": "BL28_MAT_IMAGE_015",
         "status": "active",
         "functions": [
@@ -330,10 +264,7 @@
             "Source: Single Image",
             "Color Space: Filmic Log"
         ],
-        "scene": "BoxMapping.blend",
-        "skip_config":[
-            ["GeForce GTX 1080 Ti"]
-        ]
+        "scene": "BoxMapping.blend"
     },
     {
         "case": "BL28_MAT_IMAGE_016",
@@ -375,29 +306,6 @@
             "Extension: Repeat",
             "Source: Generated",
             "Color Space: XYZ"
-        ],
-        "scene": "BoxMapping.blend"
-    },
-    {
-        "case": "BL28_MAT_IMAGE_018",
-        "status": "active",
-        "functions": [
-            "bpy.ops.image.open(filepath='//Materials/Maps/Dice.1001.jpg', directory=RES_PATH + '//Maps//', files=[{'name':'Dice.1001.jpg'}, {'name':'Dice.1002.jpg'}, {'name':'Dice.1003.jpg'}, {'name':'Dice.1004.jpg'}, {'name':'Dice.1005.jpg'}, {'name':'Dice.1006.jpg'}], relative_path=True, show_multiview=False)",
-            "Im_node().image = bpy.data.images['Dice.1001.jpg']",
-            "Im_node().interpolation = 'Linear'",
-            "Im_node().projection = 'BOX'",
-            "Im_node().projection_blend = 0.620455",
-            "Im_node().extension = 'EXTEND'",
-            "bpy.data.images['Dice.1001.jpg'].source = 'TILED'",
-            "bpy.data.images['Dice.1001.jpg'].colorspace_settings.name = 'Filmic Log'",
-            "rpr_render(case)"
-        ],
-        "script_info": [
-            "Interpolation: Linear",
-            "Projection: Box",
-            "Extension: Extend",
-            "Source: UDIM Tiles",
-            "Color Space: Filmic Log"
         ],
         "scene": "BoxMapping.blend"
     },
@@ -585,28 +493,6 @@
         "scene": "BoxMapping.blend"
     },
     {
-        "case": "BL28_MAT_IMAGE_027",
-        "status": "active",
-        "functions": [
-            "bpy.ops.image.open(filepath='//Materials/Maps/Dice.1001.jpg', directory=RES_PATH + '//Maps//', files=[{'name':'Dice.1001.jpg'}, {'name':'Dice.1002.jpg'}, {'name':'Dice.1003.jpg'}, {'name':'Dice.1004.jpg'}, {'name':'Dice.1005.jpg'}, {'name':'Dice.1006.jpg'}], relative_path=True, show_multiview=False)",
-            "Im_node().image = bpy.data.images['Dice.1001.jpg']",
-            "Im_node().interpolation = 'Closest'",
-            "Im_node().projection = 'TUBE'",
-            "Im_node().extension = 'REPEAT'",
-            "bpy.data.images['Dice.1001.jpg'].source = 'TILED'",
-            "bpy.data.images['Dice.1001.jpg'].colorspace_settings.name = 'Linear'",
-            "rpr_render(case)"
-        ],
-        "script_info": [
-            "Interpolation: Closest",
-            "Projection: Tube",
-            "Extension: Repeat",
-            "Source: UDIM Tiles",
-            "Color Space: Linear"
-        ],
-        "scene": "BoxMapping.blend"
-    },
-    {
         "case": "BL28_MAT_IMAGE_028",
         "status": "active",
         "functions": [
@@ -676,29 +562,6 @@
         "scene": "BoxMapping.blend"
     },
     {
-        "case": "BL28_MAT_IMAGE_031",
-        "status": "active",
-        "functions": [
-            "bpy.ops.image.open(filepath='//Materials/Maps/Dice.1001.jpg', directory=RES_PATH + '//Maps//', files=[{'name':'Dice.1001.jpg'}, {'name':'Dice.1002.jpg'}, {'name':'Dice.1003.jpg'}, {'name':'Dice.1004.jpg'}, {'name':'Dice.1005.jpg'}, {'name':'Dice.1006.jpg'}], relative_path=True, show_multiview=False)",
-            "Im_node().image = bpy.data.images['Dice.1001.jpg']",
-            "Im_node().interpolation = 'Cubic'",
-            "Im_node().projection = 'BOX'",
-            "Im_node().projection_blend = 0.620455",
-            "Im_node().extension = 'REPEAT'",
-            "bpy.data.images['Dice.1001.jpg'].source = 'TILED'",
-            "bpy.data.images['Dice.1001.jpg'].colorspace_settings.name = 'Linear ACES'",
-            "rpr_render(case)"
-        ],
-        "script_info": [
-            "Interpolation: Cubic",
-            "Projection: Box",
-            "Extension: Repeat",
-            "Source: UDIM Tiles",
-            "Color Space: Linear ACES"
-        ],
-        "scene": "BoxMapping.blend"
-    },
-    {
         "case": "BL28_MAT_IMAGE_032",
         "status": "active",
         "functions": [
@@ -762,28 +625,6 @@
             "Extension: Clip",
             "Source: Single Image",
             "Color Space: sRGB"
-        ],
-        "scene": "BoxMapping.blend"
-    },
-    {
-        "case": "BL28_MAT_IMAGE_035",
-        "status": "active",
-        "functions": [
-            "bpy.ops.image.open(filepath='//Materials/Maps/Dice.1001.jpg', directory=RES_PATH + '//Maps//', files=[{'name':'Dice.1001.jpg'}, {'name':'Dice.1002.jpg'}, {'name':'Dice.1003.jpg'}, {'name':'Dice.1004.jpg'}, {'name':'Dice.1005.jpg'}, {'name':'Dice.1006.jpg'}], relative_path=True, show_multiview=False)",
-            "Im_node().image = bpy.data.images['Dice.1001.jpg']",
-            "Im_node().interpolation = 'Linear'",
-            "Im_node().projection = 'SPHERE'",
-            "Im_node().extension = 'CLIP'",
-            "bpy.data.images['Dice.1001.jpg'].source = 'TILED'",
-            "bpy.data.images['Dice.1001.jpg'].colorspace_settings.name = 'Non-Color'",
-            "rpr_render(case)"
-        ],
-        "script_info": [
-            "Interpolation: Linear",
-            "Projection: Sphere",
-            "Extension: Clip",
-            "Source: UDIM Tiles",
-            "Color Space: Non-Color"
         ],
         "scene": "BoxMapping.blend"
     },
@@ -991,9 +832,162 @@
             "Source: Generated",
             "Color Space: RAW"
         ],
-        "scene": "BoxMapping.blend",
-        "skip_config":[
-            ["GeForce GTX 1080 Ti"]
-        ]
+        "scene": "BoxMapping.blend"
+    },
+    {
+        "case": "BL28_MAT_IMAGE_003",
+        "status": "active",
+        "functions": [
+            "bpy.ops.image.open(filepath='//Materials/Maps/Dice.1001.jpg', directory=RES_PATH + '//Maps//', files=[{'name':'Dice.1001.jpg'}, {'name':'Dice.1002.jpg'}, {'name':'Dice.1003.jpg'}, {'name':'Dice.1004.jpg'}, {'name':'Dice.1005.jpg'}, {'name':'Dice.1006.jpg'}], relative_path=True, show_multiview=False)",
+            "Im_node().image = bpy.data.images['Dice.1001.jpg']",
+            "Im_node().interpolation = 'Linear'",
+            "Im_node().projection = 'FLAT'",
+            "Im_node().extension = 'EXTEND'",
+            "bpy.data.images['Dice.1001.jpg'].source = 'TILED'",
+            "bpy.data.images['Dice.1001.jpg'].colorspace_settings.name = 'Raw'",
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Interpolation: Linear",
+            "Projection: Flat",
+            "Extension: Extend",
+            "Source: UDIM Tiles",
+            "Color Space: RAW"
+        ],
+        "scene": "BoxMapping.blend"
+    },
+    {
+        "case": "BL28_MAT_IMAGE_005",
+        "status": "active",
+        "functions": [
+            "bpy.ops.image.open(filepath='//Materials/Maps/Dice.1001.jpg', directory=RES_PATH + '//Maps//', files=[{'name':'Dice.1001.jpg'}, {'name':'Dice.1002.jpg'}, {'name':'Dice.1003.jpg'}, {'name':'Dice.1004.jpg'}, {'name':'Dice.1005.jpg'}, {'name':'Dice.1006.jpg'}], relative_path=True, show_multiview=False)",
+            "Im_node().image = bpy.data.images['Dice.1001.jpg']",
+            "Im_node().interpolation = 'Closest'",
+            "Im_node().projection = 'SPHERE'",
+            "Im_node().extension = 'REPEAT'",
+            "bpy.data.images['Dice.1001.jpg'].source = 'TILED'",
+            "bpy.data.images['Dice.1001.jpg'].colorspace_settings.name = 'sRGB'",
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Interpolation: Closest",
+            "Projection: Sphere",
+            "Extension: Repeat",
+            "Source: UDIM Tiles",
+            "Color Space: sRGB"
+        ],
+        "scene": "BoxMapping.blend"
+    },
+    {
+        "case": "BL28_MAT_IMAGE_014",
+        "status": "active",
+        "functions": [
+            "bpy.ops.image.open(filepath='//Materials/Maps/Dice.1001.jpg', directory=RES_PATH + '//Maps//', files=[{'name':'Dice.1001.jpg'}, {'name':'Dice.1002.jpg'}, {'name':'Dice.1003.jpg'}, {'name':'Dice.1004.jpg'}, {'name':'Dice.1005.jpg'}, {'name':'Dice.1006.jpg'}], relative_path=True, show_multiview=False)",
+            "Im_node().image = bpy.data.images['Dice.1001.jpg']",
+            "Im_node().interpolation = 'Cubic'",
+            "Im_node().projection = 'FLAT'",
+            "Im_node().extension = 'CLIP'",
+            "bpy.data.images['Dice.1001.jpg'].source = 'TILED'",
+            "bpy.data.images['Dice.1001.jpg'].colorspace_settings.name = 'XYZ'",
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Interpolation: Cubic",
+            "Projection: Flat",
+            "Extension: Clip",
+            "Source: UDIM Tiles",
+            "Color Space: XYZ"
+        ],
+        "scene": "BoxMapping.blend"
+    },
+    {
+        "case": "BL28_MAT_IMAGE_018",
+        "status": "active",
+        "functions": [
+            "bpy.ops.image.open(filepath='//Materials/Maps/Dice.1001.jpg', directory=RES_PATH + '//Maps//', files=[{'name':'Dice.1001.jpg'}, {'name':'Dice.1002.jpg'}, {'name':'Dice.1003.jpg'}, {'name':'Dice.1004.jpg'}, {'name':'Dice.1005.jpg'}, {'name':'Dice.1006.jpg'}], relative_path=True, show_multiview=False)",
+            "Im_node().image = bpy.data.images['Dice.1001.jpg']",
+            "Im_node().interpolation = 'Linear'",
+            "Im_node().projection = 'BOX'",
+            "Im_node().projection_blend = 0.620455",
+            "Im_node().extension = 'EXTEND'",
+            "bpy.data.images['Dice.1001.jpg'].source = 'TILED'",
+            "bpy.data.images['Dice.1001.jpg'].colorspace_settings.name = 'Filmic Log'",
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Interpolation: Linear",
+            "Projection: Box",
+            "Extension: Extend",
+            "Source: UDIM Tiles",
+            "Color Space: Filmic Log"
+        ],
+        "scene": "BoxMapping.blend"
+    },
+    {
+        "case": "BL28_MAT_IMAGE_027",
+        "status": "active",
+        "functions": [
+            "bpy.ops.image.open(filepath='//Materials/Maps/Dice.1001.jpg', directory=RES_PATH + '//Maps//', files=[{'name':'Dice.1001.jpg'}, {'name':'Dice.1002.jpg'}, {'name':'Dice.1003.jpg'}, {'name':'Dice.1004.jpg'}, {'name':'Dice.1005.jpg'}, {'name':'Dice.1006.jpg'}], relative_path=True, show_multiview=False)",
+            "Im_node().image = bpy.data.images['Dice.1001.jpg']",
+            "Im_node().interpolation = 'Closest'",
+            "Im_node().projection = 'TUBE'",
+            "Im_node().extension = 'REPEAT'",
+            "bpy.data.images['Dice.1001.jpg'].source = 'TILED'",
+            "bpy.data.images['Dice.1001.jpg'].colorspace_settings.name = 'Linear'",
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Interpolation: Closest",
+            "Projection: Tube",
+            "Extension: Repeat",
+            "Source: UDIM Tiles",
+            "Color Space: Linear"
+        ],
+        "scene": "BoxMapping.blend"
+    },
+    {
+        "case": "BL28_MAT_IMAGE_031",
+        "status": "active",
+        "functions": [
+            "bpy.ops.image.open(filepath='//Materials/Maps/Dice.1001.jpg', directory=RES_PATH + '//Maps//', files=[{'name':'Dice.1001.jpg'}, {'name':'Dice.1002.jpg'}, {'name':'Dice.1003.jpg'}, {'name':'Dice.1004.jpg'}, {'name':'Dice.1005.jpg'}, {'name':'Dice.1006.jpg'}], relative_path=True, show_multiview=False)",
+            "Im_node().image = bpy.data.images['Dice.1001.jpg']",
+            "Im_node().interpolation = 'Cubic'",
+            "Im_node().projection = 'BOX'",
+            "Im_node().projection_blend = 0.620455",
+            "Im_node().extension = 'REPEAT'",
+            "bpy.data.images['Dice.1001.jpg'].source = 'TILED'",
+            "bpy.data.images['Dice.1001.jpg'].colorspace_settings.name = 'Linear ACES'",
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Interpolation: Cubic",
+            "Projection: Box",
+            "Extension: Repeat",
+            "Source: UDIM Tiles",
+            "Color Space: Linear ACES"
+        ],
+        "scene": "BoxMapping.blend"
+    },
+    {
+        "case": "BL28_MAT_IMAGE_035",
+        "status": "active",
+        "functions": [
+            "bpy.ops.image.open(filepath='//Materials/Maps/Dice.1001.jpg', directory=RES_PATH + '//Maps//', files=[{'name':'Dice.1001.jpg'}, {'name':'Dice.1002.jpg'}, {'name':'Dice.1003.jpg'}, {'name':'Dice.1004.jpg'}, {'name':'Dice.1005.jpg'}, {'name':'Dice.1006.jpg'}], relative_path=True, show_multiview=False)",
+            "Im_node().image = bpy.data.images['Dice.1001.jpg']",
+            "Im_node().interpolation = 'Linear'",
+            "Im_node().projection = 'SPHERE'",
+            "Im_node().extension = 'CLIP'",
+            "bpy.data.images['Dice.1001.jpg'].source = 'TILED'",
+            "bpy.data.images['Dice.1001.jpg'].colorspace_settings.name = 'Non-Color'",
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Interpolation: Linear",
+            "Projection: Sphere",
+            "Extension: Clip",
+            "Source: UDIM Tiles",
+            "Color Space: Non-Color"
+        ],
+        "scene": "BoxMapping.blend"
     }
 ]
