@@ -10,7 +10,12 @@
         ],
         "scene": "Blender_2_81_the_junk_Shop.blend",
         "skip_engine": [
-            ["Tahoe"]
+            "Tahoe"
+        ],
+        "skip_config": [
+            ["Radeon (TM) Pro WX 9100"],
+            ["AMD Radeon (TM) Pro WX 7100 Graphics"],
+            ["Radeon RX Vega"]
         ]
     },
     {
@@ -87,7 +92,7 @@
             ["GeForce GTX 1080 Ti"]
         ],
         "skip_engine": [
-            ["Tahoe"]
+            "Tahoe"
         ]
     },
     {
