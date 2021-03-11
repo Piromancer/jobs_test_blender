@@ -330,7 +330,10 @@
             "Source: Single Image",
             "Color Space: Filmic Log"
         ],
-        "scene": "BoxMapping.blend"
+        "scene": "BoxMapping.blend",
+        "skip_config":[
+            ["GeForce GTX 1080 Ti"]
+        ]
     },
     {
         "case": "BL28_MAT_IMAGE_016",
@@ -988,6 +991,9 @@
             "Source: Generated",
             "Color Space: RAW"
         ],
-        "scene": "BoxMapping.blend"
+        "scene": "BoxMapping.blend",
+        "skip_config":[
+            ["GeForce GTX 1080 Ti"]
+        ]
     }
 ]
