@@ -534,6 +534,9 @@
         "scene": "AOV_test.blend",
         "skip_engine": [
             "LOW", "MEDIUM", "HIGH"
+        ],
+        "skip_config": [
+            ["Linux"]
         ]
     },
     {
