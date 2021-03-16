@@ -15,7 +15,8 @@
         "skip_config": [
             ["Radeon (TM) Pro WX 9100"],
             ["AMD Radeon (TM) Pro WX 7100 Graphics"],
-            ["Radeon RX Vega"]
+            ["Radeon RX Vega"],
+            ["Linux"]
         ]
     },
     {
@@ -405,7 +406,7 @@
     },
     {
         "case": "BL28_BCS_028",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "bpy.data.collections['Volumetrics'].hide_render = True",
             "set_value(bpy.context.scene.world.rpr, 'intensity', 0.5)",
@@ -415,7 +416,8 @@
             "rpr_render(case)"
         ],
         "script_info": [
-            "Blender_2_83"
+            "Blender_2_83",
+            "https://amdrender.atlassian.net/browse/RPRBLND-1678"
         ],
         "scene": "Blender_2_83.blend",
         "skip_engine": [
@@ -517,7 +519,7 @@
     },
     {
         "case": "BL28_BCS_035",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
@@ -602,7 +604,11 @@
         "script_info": [
             "Lone Monk"
         ],
-        "scene": "lone-monk_cycles_and_exposure-node_demo.blend"
+        "scene": "lone-monk_cycles_and_exposure-node_demo.blend",
+        "skip_config": [
+            ["AMD Radeon (TM) Pro WX 7100 Graphics"],
+            ["Radeon (TM) Pro WX 9100"]
+        ]
     },
     {
         "case": "BL28_BCS_043",
@@ -624,7 +630,10 @@
         "script_info": [
             "Text morph"
         ],
-        "scene": "text-morph_geometry-nodes-demo.blend"
+        "scene": "text-morph_geometry-nodes-demo.blend",
+        "skip_config": [
+            ["AMD Radeon (TM) Pro WX 7100 Graphics"]
+        ]
     },
     {
         "case": "BL28_BCS_045",
