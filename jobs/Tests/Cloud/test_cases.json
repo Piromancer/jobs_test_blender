@@ -392,12 +392,13 @@
     },
     {
         "case": "BL28_BCS_027",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
         "script_info": [
-            "Tram_Station"
+            "Tram_Station",
+            "https://amdrender.atlassian.net/browse/RPRBLND-1655"
         ],
         "scene": "Tram_Station.blend",
         "skip_config": [
@@ -463,12 +464,13 @@
     },
     {
         "case": "BL28_BCS_031",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
         "script_info": [
-            "greasepencil-bike"
+            "greasepencil-bike",
+            "https://amdrender.atlassian.net/browse/RPRBLND-1655"
         ],
         "scene": "greasepencil-bike.blend",
         "skip_config": [
@@ -607,7 +609,8 @@
         "scene": "lone-monk_cycles_and_exposure-node_demo.blend",
         "skip_config": [
             ["AMD Radeon (TM) Pro WX 7100 Graphics"],
-            ["Radeon (TM) Pro WX 9100"]
+            ["Radeon (TM) Pro WX 9100"],
+            ["AMD Radeon RX Vega 56 (Metal)"]
         ]
     },
     {
