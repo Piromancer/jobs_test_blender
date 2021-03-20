@@ -3,7 +3,7 @@
 
     <outpath value="{OutputDir}"/>
 
-    <execute command='python "{ResourcesDir}/simpleRender.py"' timeout="2700">
+    <execute command='python "{ResourcesDir}/simpleRender.py"' timeout="7200">
         <argument>--tool "{Tool}"</argument>
         <argument>--render_device "{RenderDevice}"</argument>
         <argument>--output "{OutputDir}"</argument>
@@ -18,7 +18,7 @@
         <argument>--engine "{engine}"</argument>
         <argument>--retries {retries}</argument>
         <argument>--update_refs "{UpdateRefs}"</argument>
-        <argument>--stucking_time 480</argument>
+        <argument>--stucking_time 660</argument>
     </execute>
 
     <execute command='python "{ResourcesDir}/syncTime.py"'>
