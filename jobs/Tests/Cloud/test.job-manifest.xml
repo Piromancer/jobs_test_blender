@@ -18,7 +18,7 @@
         <argument>--engine "{engine}"</argument>
         <argument>--retries {retries}</argument>
         <argument>--update_refs "{UpdateRefs}"</argument>
-        <argument>--stucking_time 900</argument>
+        <argument>--stucking_time 1200</argument>
     </execute>
 
     <execute command='python "{ResourcesDir}/syncTime.py"'>
