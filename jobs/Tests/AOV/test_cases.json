@@ -1074,7 +1074,7 @@
             ["AMD Radeon RX Vega 56 (Metal)"]
         ],
         "skip_engine": [
-            "LOW", "MEDIUM", "HIGH", "Tahoe"
+            "LOW", "MEDIUM", "HIGH", "FULL"
         ]
     },
     {
@@ -1093,7 +1093,7 @@
             ["AMD Radeon RX Vega 56 (Metal)"]
         ],
         "skip_engine": [
-            "LOW", "MEDIUM", "HIGH", "Tahoe"
+            "LOW", "MEDIUM", "HIGH", "FULL"
         ]
     },
     {
@@ -1112,7 +1112,7 @@
             ["AMD Radeon RX Vega 56 (Metal)"]
         ],
         "skip_engine": [
-            "LOW", "MEDIUM", "HIGH", "Tahoe"
+            "LOW", "MEDIUM", "HIGH", "FULL"
         ]
     },
     {
@@ -1130,7 +1130,7 @@
             ["AMD Radeon RX Vega 56 (Metal)"]
         ],
         "skip_engine": [
-            "LOW", "MEDIUM", "HIGH", "Tahoe"
+            "LOW", "MEDIUM", "HIGH", "FULL"
         ]
     },
     {
@@ -1149,7 +1149,7 @@
             ["AMD Radeon RX Vega 56 (Metal)"]
         ],
         "skip_engine": [
-            "LOW", "MEDIUM", "HIGH", "Tahoe"
+            "LOW", "MEDIUM", "HIGH", "FULL"
         ]
     },
     {
@@ -1168,7 +1168,7 @@
             ["AMD Radeon RX Vega 56 (Metal)"]
         ],
         "skip_engine": [
-            "LOW", "MEDIUM", "HIGH", "Tahoe"
+            "LOW", "MEDIUM", "HIGH", "FULL"
         ]
     }
 ]
