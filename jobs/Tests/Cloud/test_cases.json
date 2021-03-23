@@ -578,7 +578,8 @@
             "rpr_render(case)"
         ],
         "script_info": [
-            "Nishita Sky"
+            "Nishita Sky",
+            "https://amdrender.atlassian.net/browse/RPRBLND-1690"
         ],
         "scene": "290skydemo_release.blend"
     }
