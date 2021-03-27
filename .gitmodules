@@ -1,3 +1,6 @@
 [submodule "jobs_launcher"]
 	path = jobs_launcher
 	url = https://github.com/luxteam/jobs_launcher
+[submodule "RadeonProRenderSDK"]
+	path = RadeonProRenderSDK
+	url = https://github.com/GPUOpen-LibrariesAndSDKs/RadeonProRenderSDK.git

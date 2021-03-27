@@ -1,0 +1,40 @@
+[
+    {
+        "case": "BL28_RPR_EX_001",
+        "status": "active",
+        "functions": [
+            "bpy.ops.rpr.export_scene_rpr(filepath=os.path.join(RPR_TOOL_DIR, case['case'] + \".rpr\"), check_existing=True, filter_glob=\"*.rpr\", export_animation=False, export_as_single_file=False, compression='LOW', start_frame=0, end_frame=0)",
+            "core_render(case)"
+        ],
+        "script_info": [
+            "Result of the Core rendering"
+        ],
+        "scene": "RPR_Export.blend",
+        "extension": ".png",
+        "skip_engine": [
+            "FULL",
+            "LOW",
+            "MEDIUM",
+            "HIGH"
+        ]
+    },
+    {
+        "case": "BL28_RPR_EX_002",
+        "status": "active",
+        "functions": [
+            "bpy.ops.rpr.export_scene_rpr(filepath=os.path.join(RPR_TOOL_DIR, case['case'] + \".rpr\"), check_existing=True, filter_glob=\"*.rpr\", export_animation=False, export_as_single_file=False, compression='LOW', start_frame=0, end_frame=0)",
+            "core_render(case)"
+        ],
+        "script_info": [
+            "Result of the Core rendering"
+        ],
+        "scene": "RPR_Export.blend",
+        "extension": ".png",
+        "skip_engine": [
+            "FULL",
+            "LOW",
+            "MEDIUM",
+            "HIGH"
+        ]
+    }
+]
