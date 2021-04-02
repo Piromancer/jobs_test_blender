@@ -534,6 +534,9 @@
         "scene": "AOV_test.blend",
         "skip_engine": [
             "LOW", "MEDIUM", "HIGH"
+        ],
+        "skip_config": [
+            ["Linux"]
         ]
     },
     {
@@ -1069,6 +1072,9 @@
         "scene": "AOV_testC.blend",
         "skip_config": [
             ["AMD Radeon RX Vega 56 (Metal)"]
+        ],
+        "skip_engine": [
+            "LOW", "MEDIUM", "HIGH", "FULL"
         ]
     },
     {
@@ -1085,6 +1091,9 @@
         "scene": "AOV_testC.blend",
         "skip_config": [
             ["AMD Radeon RX Vega 56 (Metal)"]
+        ],
+        "skip_engine": [
+            "LOW", "MEDIUM", "HIGH", "FULL"
         ]
     },
     {
@@ -1101,6 +1110,9 @@
         "scene": "AOV_testC.blend",
         "skip_config": [
             ["AMD Radeon RX Vega 56 (Metal)"]
+        ],
+        "skip_engine": [
+            "LOW", "MEDIUM", "HIGH", "FULL"
         ]
     },
     {
@@ -1116,6 +1128,9 @@
         "scene": "AOV_testC.blend",
         "skip_config": [
             ["AMD Radeon RX Vega 56 (Metal)"]
+        ],
+        "skip_engine": [
+            "LOW", "MEDIUM", "HIGH", "FULL"
         ]
     },
     {
@@ -1132,6 +1147,9 @@
         "scene": "AOV_testC.blend",
         "skip_config": [
             ["AMD Radeon RX Vega 56 (Metal)"]
+        ],
+        "skip_engine": [
+            "LOW", "MEDIUM", "HIGH", "FULL"
         ]
     },
     {
@@ -1148,6 +1166,9 @@
         "scene": "AOV_testC.blend",
         "skip_config": [
             ["AMD Radeon RX Vega 56 (Metal)"]
+        ],
+        "skip_engine": [
+            "LOW", "MEDIUM", "HIGH", "FULL"
         ]
     }
 ]

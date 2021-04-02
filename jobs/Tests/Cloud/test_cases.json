@@ -588,12 +588,13 @@
     },
     {
         "case": "BL28_BCS_041",
-        "status": "active",
+        "status": "skipped",
         "functions": [
             "rpr_render(case)"
         ],
         "script_info": [
-            "Nishita Sky"
+            "Nishita Sky",
+            "https://amdrender.atlassian.net/browse/RPRBLND-1690"
         ],
         "scene": "290skydemo_release.blend"
     },

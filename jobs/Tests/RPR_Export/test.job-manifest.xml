@@ -3,22 +3,21 @@
 
     <outpath value="{OutputDir}"/>
 
-    <execute command='python "{ResourcesDir}/simpleRender.py"' timeout="2700">
+    <execute command='python "{ResourcesDir}/simpleRender.py"' timeout="600">
         <argument>--tool "{Tool}"</argument>
         <argument>--render_device "{RenderDevice}"</argument>
         <argument>--output "{OutputDir}"</argument>
-        <argument>--testType Cloud</argument>
-        <argument>--pass_limit 30</argument>
+        <argument>--testType RPR_Export</argument>
+        <argument>--pass_limit {PassLimit}</argument>
         <argument>--resolution_x {rx}</argument>
         <argument>--resolution_y {ry}</argument>
-        <argument>--res_path "{ScenesDir}/Cloud"</argument>
+        <argument>--res_path "{ScenesDir}"/RPR_Export</argument>
         <argument>--testCases "{TestCases}"</argument>
-        <argument>--SPU 15</argument>
+        <argument>--SPU {SPU}</argument>
         <argument>--threshold {threshold}</argument>
         <argument>--engine "{engine}"</argument>
         <argument>--retries {retries}</argument>
         <argument>--update_refs "{UpdateRefs}"</argument>
-        <argument>--stucking_time 300</argument>
     </execute>
 
     <execute command='python "{ResourcesDir}/syncTime.py"'>

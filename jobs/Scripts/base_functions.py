@@ -9,6 +9,8 @@ import os
 import sys
 import pyrpr
 import glob
+import subprocess 
+import platform
 from shutil import copyfile
 from rprblender import material_library
 from rprblender.utils.user_settings import get_user_settings
