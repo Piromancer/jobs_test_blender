@@ -10,7 +10,7 @@
         ],
         "scene": "Blender_2_81_the_junk_Shop.blend",
         "skip_engine": [
-            "Tahoe"
+            "FULL"
         ],
         "skip_config": [
             ["Radeon (TM) Pro WX 9100"],
@@ -93,7 +93,7 @@
             ["GeForce GTX 1080 Ti"]
         ],
         "skip_engine": [
-            "Tahoe"
+            "FULL"
         ]
     },
     {
@@ -159,7 +159,10 @@
         "script_info": [
             "Wanderer"
         ],
-        "scene": "Wanderer.blend"
+        "scene": "Wanderer.blend",
+        "skip_engine": [
+            "FULL"
+        ]
     },
     {
         "case": "BL28_BCS_011",
