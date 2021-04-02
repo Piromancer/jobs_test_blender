@@ -728,6 +728,17 @@
             "Monster under the bed"
         ],
         "scene": "monster_under_the_bed.blend"
+    },
+    {
+        "case": "BL28_BCS_053",
+        "status": "skipped",
+        "functions": [
+            "rpr_render(case)"
+        ],
+        "script_info": [
+            "Taco rice"
+        ],
+        "scene": "taco-rice.blend"
     }
 ]
  
