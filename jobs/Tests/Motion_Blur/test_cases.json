@@ -68,5 +68,281 @@
             "set_value(camera.rpr, 'motion_blur_exposure', 10)",
             "rpr_render(case)"
         ]
+    },
+    {
+        "case": "BL28_RS_MB_006",
+        "status": "active",
+        "script_info": [
+            "Only in Velocity AOV"
+        ],
+        "scene": "MotionBlur.blend",
+        "functions": [
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.context.scene.rpr.motion_blur_in_velocity_aov = True",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_007",
+        "status": "active",
+        "script_info": [
+            "\"Tile render\" Motion Blur"
+        ],
+        "scene": "MotionBlur.blend",
+        "functions": [
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.context.scene.rpr.use_tile_render = True",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_008",
+        "status": "active",
+        "script_info": [
+            "Animated Camera",
+            "Exposure - 0"
+        ],
+        "scene": "MotionBlur_Complex.blend",
+        "functions": [
+            "bpy.context.scene.camera = bpy.data.objects[\"CameraAnimated\"]",
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 0",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_009",
+        "status": "active",
+        "script_info": [
+            "Animated Camera",
+            "Exposure - 0.5"
+        ],
+        "scene": "MotionBlur_Complex.blend",
+        "functions": [
+            "bpy.context.scene.camera = bpy.data.objects[\"CameraAnimated\"]",
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 0.5",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_010",
+        "status": "active",
+        "script_info": [
+            "Animated Camera",
+            "Exposure - 5"
+        ],
+        "scene": "MotionBlur_Complex.blend",
+        "functions": [
+            "bpy.context.scene.camera = bpy.data.objects[\"CameraAnimated\"]",
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 5",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_011",
+        "status": "active",
+        "script_info": [
+            "Animated Camera",
+            "Exposure - 10"
+        ],
+        "scene": "MotionBlur_Complex.blend",
+        "functions": [
+            "bpy.context.scene.camera = bpy.data.objects[\"CameraAnimated\"]",
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 10",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_012",
+        "status": "active",
+        "script_info": [
+            "Animated Camera",
+            "Deactivated \"Motion Blur\" for \"Propeller\""
+        ],
+        "scene": "MotionBlur_Complex.blend",
+        "functions": [
+            "bpy.context.scene.camera = bpy.data.objects[\"CameraAnimated\"]",
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.data.objects['Propeller'].rpr.motion_blur = False",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_013",
+        "status": "active",
+        "script_info": [
+            "Animated Camera",
+            "Deactivated \"Motion Blur\" for \"Suzanne\""
+        ],
+        "scene": "MotionBlur_Complex.blend",
+        "functions": [
+            "bpy.context.scene.camera = bpy.data.objects[\"CameraAnimated\"]",
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.data.objects['Suzanne'].rpr.motion_blur = False",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_014",
+        "status": "active",
+        "script_info": [
+            "Animated Camera",
+            "Only in Velocity AOV"
+        ],
+        "scene": "MotionBlur_Complex.blend",
+        "functions": [
+            "bpy.context.scene.camera = bpy.data.objects[\"CameraAnimated\"]",
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.context.scene.rpr.motion_blur_in_velocity_aov = True",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_015",
+        "status": "active",
+        "script_info": [
+            "Animated Camera",
+            "\"Tile render\" Motion Blur"
+        ],
+        "scene": "MotionBlur_Complex.blend",
+        "functions": [
+            "bpy.context.scene.camera = bpy.data.objects[\"CameraAnimated\"]",
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.context.scene.rpr.use_tile_render = True",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_016",
+        "status": "active",
+        "script_info": [
+            "Static Camera",
+            "Exposure - 0"
+        ],
+        "scene": "MotionBlur_Complex.blend",
+        "functions": [
+            "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 0",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_017",
+        "status": "active",
+        "script_info": [
+            "Static Camera",
+            "Exposure - 0.5"
+        ],
+        "scene": "MotionBlur_Complex.blend",
+        "functions": [
+            "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 0.5",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_018",
+        "status": "active",
+        "script_info": [
+            "Static Camera",
+            "Exposure - 5"
+        ],
+        "scene": "MotionBlur_Complex.blend",
+        "functions": [
+            "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 5",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_019",
+        "status": "active",
+        "script_info": [
+            "Static Camera",
+            "Exposure - 10"
+        ],
+        "scene": "MotionBlur_Complex.blend",
+        "functions": [
+            "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 10",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_020",
+        "status": "active",
+        "script_info": [
+            "Static Camera",
+            "Deactivated \"Motion Blur\" for \"Propeller\""
+        ],
+        "scene": "MotionBlur_Complex.blend",
+        "functions": [
+            "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.data.objects['Propeller'].rpr.motion_blur = False",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_021",
+        "status": "active",
+        "script_info": [
+            "Static Camera",
+            "Deactivated \"Motion Blur\" for \"Suzanne\""
+        ],
+        "scene": "MotionBlur_Complex.blend",
+        "functions": [
+            "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.data.objects['Suzanne'].rpr.motion_blur = False",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_022",
+        "status": "active",
+        "script_info": [
+            "Static Camera",
+            "Only in Velocity AOV"
+        ],
+        "scene": "MotionBlur_Complex.blend",
+        "functions": [
+            "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.context.scene.rpr.motion_blur_in_velocity_aov = True",
+            "rpr_render(case)"
+        ]
+    },
+    {
+        "case": "BL28_RS_MB_023",
+        "status": "active",
+        "script_info": [
+            "Static Camera",
+            "\"Tile render\" Motion Blur"
+        ],
+        "scene": "MotionBlur_Complex.blend",
+        "functions": [
+            "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
+            "bpy.context.scene.render.use_motion_blur = True",
+            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.context.scene.rpr.use_tile_render = True",
+            "rpr_render(case)"
+        ]
     }
 ]
