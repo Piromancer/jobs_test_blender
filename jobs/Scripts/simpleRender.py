@@ -268,8 +268,11 @@ def main(args):
     with open(os.path.join(work_dir, 'test_cases.json'), "w+") as f:
         json.dump(cases, f, indent=4)
 
-    cmdRun = '"{tool}" -b -P "{template}"\n'.format(
+    cmdRun = '"{tool}" --enable-autoexec -P  "{template}"\n'.format(
         tool=args.tool, template=os.path.join(args.output, 'base_functions.py'))
+    
+    if args.testType == "Viewport":
+        cmdRun.replace(" -b ","  ", 1)
 
     if system_pl == "Windows":
         cmdScriptPath = os.path.join(work_dir, 'script.bat')

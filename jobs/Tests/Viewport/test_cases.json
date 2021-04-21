@@ -1,0 +1,13 @@
+[
+	{
+		"case": "BL28_VP_001",
+		"status": "active",
+		"functions": [
+			"save_viewport(case)"
+		],
+		"script_info": [
+			"Viewport testing"
+		],
+		"scene": "Viewport.blend"
+	}
+]

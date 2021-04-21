@@ -330,3 +330,6 @@ def main():
 
 
 main()
+
+if TEST_TYPE == "Viewport":
+    bpy.ops.wm.quit_blender()
