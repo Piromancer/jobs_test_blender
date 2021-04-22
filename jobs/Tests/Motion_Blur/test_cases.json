@@ -80,7 +80,12 @@
             "bpy.context.scene.render.use_motion_blur = True",
             "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
             "bpy.context.scene.rpr.motion_blur_in_velocity_aov = True",
-            "rpr_render(case)"
+            "bpy.context.scene.enable_aovs[14] = True",
+            "rpr_render(case)",
+            "test_case_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_006.jpg')",
+            "aov_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_0060040.jpg')",
+            "if os.path.exists(test_case_image): os.remove(test_case_image)",
+            "if os.path.exists(aov_image): os.rename(aov_image, test_case_image)"
         ]
     },
     {
@@ -93,6 +98,7 @@
         "functions": [
             "bpy.context.scene.render.use_motion_blur = True",
             "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.context.scene.rpr.motion_blur_in_velocity_aov = False",
             "bpy.context.scene.rpr.use_tile_render = True",
             "rpr_render(case)"
         ]
@@ -202,7 +208,12 @@
             "bpy.context.scene.render.use_motion_blur = True",
             "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
             "bpy.context.scene.rpr.motion_blur_in_velocity_aov = True",
-            "rpr_render(case)"
+            "bpy.context.scene.enable_aovs[14] = True",
+            "rpr_render(case)",
+            "test_case_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_006.jpg')",
+            "aov_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_0060040.jpg')",
+            "if os.path.exists(test_case_image): os.remove(test_case_image)",
+            "if os.path.exists(aov_image): os.rename(aov_image, test_case_image)"
         ]
     },
     {
@@ -217,6 +228,7 @@
             "bpy.context.scene.camera = bpy.data.objects[\"CameraAnimated\"]",
             "bpy.context.scene.render.use_motion_blur = True",
             "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.context.scene.rpr.motion_blur_in_velocity_aov = False",
             "bpy.context.scene.rpr.use_tile_render = True",
             "rpr_render(case)"
         ]
@@ -326,7 +338,12 @@
             "bpy.context.scene.render.use_motion_blur = True",
             "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
             "bpy.context.scene.rpr.motion_blur_in_velocity_aov = True",
-            "rpr_render(case)"
+            "bpy.context.scene.enable_aovs[14] = True",
+            "rpr_render(case)",
+            "test_case_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_006.jpg')",
+            "aov_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_0060040.jpg')",
+            "if os.path.exists(test_case_image): os.remove(test_case_image)",
+            "if os.path.exists(aov_image): os.rename(aov_image, test_case_image)"
         ]
     },
     {
@@ -341,6 +358,7 @@
             "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
             "bpy.context.scene.render.use_motion_blur = True",
             "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.context.scene.rpr.motion_blur_in_velocity_aov = False",
             "bpy.context.scene.rpr.use_tile_render = True",
             "rpr_render(case)"
         ]
