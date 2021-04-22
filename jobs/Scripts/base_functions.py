@@ -328,8 +328,10 @@ def main():
 
     event('Close tool', True, cases[-1]['case'])
 
+    if TEST_TYPE == "Viewport":
+        sys.exit(1)
+
 
 main()
 
-if TEST_TYPE == "Viewport":
-    bpy.ops.wm.quit_blender()
+
