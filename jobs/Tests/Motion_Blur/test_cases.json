@@ -210,8 +210,8 @@
             "bpy.context.scene.rpr.motion_blur_in_velocity_aov = True",
             "bpy.context.scene.enable_aovs[14] = True",
             "rpr_render(case)",
-            "test_case_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_006.jpg')",
-            "aov_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_0060040.jpg')",
+            "test_case_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_014.jpg')",
+            "aov_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_0140040.jpg')",
             "if os.path.exists(test_case_image): os.remove(test_case_image)",
             "if os.path.exists(aov_image): os.rename(aov_image, test_case_image)"
         ]
@@ -340,8 +340,8 @@
             "bpy.context.scene.rpr.motion_blur_in_velocity_aov = True",
             "bpy.context.scene.enable_aovs[14] = True",
             "rpr_render(case)",
-            "test_case_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_006.jpg')",
-            "aov_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_0060040.jpg')",
+            "test_case_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_022.jpg')",
+            "aov_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_0220040.jpg')",
             "if os.path.exists(test_case_image): os.remove(test_case_image)",
             "if os.path.exists(aov_image): os.rename(aov_image, test_case_image)"
         ]
