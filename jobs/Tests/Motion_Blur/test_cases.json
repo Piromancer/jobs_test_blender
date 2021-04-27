@@ -71,7 +71,7 @@
     },
     {
         "case": "BL28_RS_MB_006",
-        "status": "active",
+        "status": "skipped",
         "script_info": [
             "Only in Velocity AOV"
         ],
@@ -197,7 +197,7 @@
     },
     {
         "case": "BL28_RS_MB_014",
-        "status": "active",
+        "status": "skipped",
         "script_info": [
             "Animated Camera",
             "Only in Velocity AOV"
@@ -327,7 +327,7 @@
     },
     {
         "case": "BL28_RS_MB_022",
-        "status": "active",
+        "status": "skipped",
         "script_info": [
             "Static Camera",
             "Only in Velocity AOV"
