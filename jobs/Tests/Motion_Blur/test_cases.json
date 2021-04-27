@@ -71,7 +71,7 @@
     },
     {
         "case": "BL28_RS_MB_006",
-        "status": "skipped",
+        "status": "active",
         "script_info": [
             "Only in Velocity AOV"
         ],
@@ -80,12 +80,11 @@
             "bpy.context.scene.render.use_motion_blur = True",
             "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
             "bpy.context.scene.rpr.motion_blur_in_velocity_aov = True",
-            "bpy.context.scene.enable_aovs[14] = True",
+            "bpy.data.scenes['Scene'].view_layers[\"RenderLayer\"].rpr.enable_aovs[14] = True",
+            "bpy.context.scene.use_nodes = True",
+            "connect_nodes('Render Layers', 'Velocity', 'Composite', 'Image')",
             "rpr_render(case)",
-            "test_case_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_006.jpg')",
-            "aov_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_0060040.jpg')",
-            "if os.path.exists(test_case_image): os.remove(test_case_image)",
-            "if os.path.exists(aov_image): os.rename(aov_image, test_case_image)"
+            "connect_nodes('Render Layers', 'Image', 'Composite', 'Image')"
         ]
     },
     {
@@ -197,7 +196,7 @@
     },
     {
         "case": "BL28_RS_MB_014",
-        "status": "skipped",
+        "status": "active",
         "script_info": [
             "Animated Camera",
             "Only in Velocity AOV"
@@ -208,12 +207,11 @@
             "bpy.context.scene.render.use_motion_blur = True",
             "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
             "bpy.context.scene.rpr.motion_blur_in_velocity_aov = True",
-            "bpy.context.scene.enable_aovs[14] = True",
+            "bpy.data.scenes['Scene'].view_layers[\"RenderLayer\"].rpr.enable_aovs[14] = True",
+            "bpy.context.scene.use_nodes = True",
+            "connect_nodes('Render Layers', 'Velocity', 'Composite', 'Image')",
             "rpr_render(case)",
-            "test_case_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_014.jpg')",
-            "aov_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_0140040.jpg')",
-            "if os.path.exists(test_case_image): os.remove(test_case_image)",
-            "if os.path.exists(aov_image): os.rename(aov_image, test_case_image)"
+            "connect_nodes('Render Layers', 'Image', 'Composite', 'Image')"
         ]
     },
     {
@@ -327,7 +325,7 @@
     },
     {
         "case": "BL28_RS_MB_022",
-        "status": "skipped",
+        "status": "active",
         "script_info": [
             "Static Camera",
             "Only in Velocity AOV"
@@ -338,12 +336,11 @@
             "bpy.context.scene.render.use_motion_blur = True",
             "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
             "bpy.context.scene.rpr.motion_blur_in_velocity_aov = True",
-            "bpy.context.scene.enable_aovs[14] = True",
+            "bpy.data.scenes['Scene'].view_layers[\"RenderLayer\"].rpr.enable_aovs[14] = True",
+            "bpy.context.scene.use_nodes = True",
+            "connect_nodes('Render Layers', 'Velocity', 'Composite', 'Image')",
             "rpr_render(case)",
-            "test_case_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_022.jpg')",
-            "aov_image = os.path.join(WORK_DIR, 'Color', 'BL28_RS_MB_0220040.jpg')",
-            "if os.path.exists(test_case_image): os.remove(test_case_image)",
-            "if os.path.exists(aov_image): os.rename(aov_image, test_case_image)"
+            "connect_nodes('Render Layers', 'Image', 'Composite', 'Image')"
         ]
     },
     {
