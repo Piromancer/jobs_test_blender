@@ -275,7 +275,7 @@
         "functions": [
             "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
             "bpy.context.scene.render.use_motion_blur = True",
-            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 0",
+            "bpy.data.cameras[\"Camera.002\"].rpr.motion_blur_exposure = 0",
             "rpr_render(case)",
             "bpy.context.scene.render.use_motion_blur = False"
         ]
@@ -291,7 +291,7 @@
         "functions": [
             "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
             "bpy.context.scene.render.use_motion_blur = True",
-            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 0.5",
+            "bpy.data.cameras[\"Camera.002\"].rpr.motion_blur_exposure = 0.5",
             "rpr_render(case)",
             "bpy.context.scene.render.use_motion_blur = False"
         ]
@@ -307,7 +307,7 @@
         "functions": [
             "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
             "bpy.context.scene.render.use_motion_blur = True",
-            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 5",
+            "bpy.data.cameras[\"Camera.002\"].rpr.motion_blur_exposure = 5",
             "rpr_render(case)",
             "bpy.context.scene.render.use_motion_blur = False"
         ]
@@ -323,7 +323,7 @@
         "functions": [
             "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
             "bpy.context.scene.render.use_motion_blur = True",
-            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 10",
+            "bpy.data.cameras[\"Camera.002\"].rpr.motion_blur_exposure = 10",
             "rpr_render(case)",
             "bpy.context.scene.render.use_motion_blur = False"
         ]
@@ -339,7 +339,7 @@
         "functions": [
             "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
             "bpy.context.scene.render.use_motion_blur = True",
-            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.data.cameras[\"Camera.002\"].rpr.motion_blur_exposure = 1",
             "bpy.data.objects['Propeller'].rpr.motion_blur = False",
             "rpr_render(case)",
             "bpy.data.objects['Propeller'].rpr.motion_blur = True",
@@ -357,7 +357,7 @@
         "functions": [
             "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
             "bpy.context.scene.render.use_motion_blur = True",
-            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.data.cameras[\"Camera.002\"].rpr.motion_blur_exposure = 1",
             "bpy.data.objects['Suzanne'].rpr.motion_blur = False",
             "rpr_render(case)",
             "bpy.data.objects['Suzanne'].rpr.motion_blur = True",
@@ -375,7 +375,7 @@
         "functions": [
             "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
             "bpy.context.scene.render.use_motion_blur = True",
-            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.data.cameras[\"Camera.002\"].rpr.motion_blur_exposure = 1",
             "bpy.context.scene.rpr.motion_blur_in_velocity_aov = True",
             "bpy.data.scenes['Scene'].view_layers[\"RenderLayer\"].rpr.enable_aovs[14] = True",
             "bpy.context.scene.use_nodes = True",
@@ -399,7 +399,7 @@
         "functions": [
             "bpy.context.scene.camera = bpy.data.objects[\"CameraStatic\"]",
             "bpy.context.scene.render.use_motion_blur = True",
-            "bpy.data.cameras[\"Camera\"].rpr.motion_blur_exposure = 1",
+            "bpy.data.cameras[\"Camera.002\"].rpr.motion_blur_exposure = 1",
             "bpy.context.scene.rpr.motion_blur_in_velocity_aov = False",
             "bpy.context.scene.rpr.use_tile_render = True",
             "rpr_render(case)",
